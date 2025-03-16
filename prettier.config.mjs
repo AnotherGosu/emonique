@@ -1,0 +1,41 @@
+/** @type {import("prettier").Config} */
+const config = {
+  arrowParens: "always",
+  bracketSameLine: false,
+  bracketSpacing: true,
+  embeddedLanguageFormatting: "auto",
+  endOfLine: "lf",
+  htmlWhitespaceSensitivity: "css",
+  importOrder: [
+    "^@/types",
+    "^@/constants",
+    "^@/images",
+    "^@/api",
+    "^@/utils",
+    "^@/lib",
+    "^@/hooks",
+    "^@/components",
+    "^./",
+  ],
+  importOrderSeparation: true,
+  insertPragma: false,
+  jsxSingleQuote: false,
+  plugins: [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+  ],
+  pluginSearchDirs: false,
+  printWidth: 80,
+  proseWrap: "preserve",
+  quoteProps: "consistent",
+  requirePragma: false,
+  semi: true,
+  singleAttributePerLine: true,
+  singleQuote: false,
+  tabWidth: 2,
+  trailingComma: "all",
+  useTabs: false,
+  vueIndentScriptAndStyle: false,
+};
+
+export default config;
