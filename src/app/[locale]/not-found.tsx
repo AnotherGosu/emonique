@@ -1,22 +1,27 @@
 "use client";
 
-import { useParams } from "next/navigation";
-
-import { Locale } from "@/types/common";
+import { useDictionary } from "@/hooks/useDictionary";
 
 import { ButtonLink } from "@/components/ButtonLink";
+import { Loader } from "@/components/Status";
 import { Heading, Section } from "@/components/Typography";
 
 export default function NotFound() {
-  const { locale } = useParams<{ locale: Locale }>();
+  const dict = useDictionary();
 
   return (
     <Section className="flex h-svh flex-col items-center justify-center gap-8 text-center">
-      <Heading level="h1">Not Found</Heading>
+      {dict ? (
+        <div>
+          <Heading level="h1">{dict["headings"]["not_found"]}</Heading>
 
-      <p>Oops! This artwork must have been sold… or maybe it never existed!</p>
+          <p>{dict["phrases"]["not_found"]}</p>
 
-      <ButtonLink href={`/${locale}`}>Home</ButtonLink>
+          <ButtonLink href="/">{dict["buttons"]["home"]}</ButtonLink>
+        </div>
+      ) : (
+        <Loader />
+      )}
     </Section>
   );
 }

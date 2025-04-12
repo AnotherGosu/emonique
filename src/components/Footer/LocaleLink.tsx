@@ -19,9 +19,10 @@ export const LocaleLink = ({ locale }: LocaleLinkProps) => {
     <Link
       href={pathname.replace(params.locale, locale)}
       className={cn(
-        "uppercase transition",
+        "rounded-xs uppercase transition outline-none",
         "hover:text-neutral-300",
         "active:text-neutral-400",
+        "focus-visible:ring focus-visible:ring-blue-500",
       )}
     >
       {locale}

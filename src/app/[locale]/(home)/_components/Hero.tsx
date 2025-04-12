@@ -10,8 +10,8 @@ export const Hero = () => {
       <div className="flex flex-col items-center justify-center gap-10">
         <h1
           className={cn(
-            "text-center text-7xl text-neutral-50 mix-blend-difference",
-            "md:text-9xl",
+            "pr-3 text-center text-7xl text-neutral-50 mix-blend-difference",
+            "md:pr-5 md:text-9xl",
           )}
         >
           Emonique
@@ -19,6 +19,7 @@ export const Hero = () => {
 
         <div className="grid grid-cols-2 gap-10">
           <span className="text-right text-neutral-50">Every Artwork</span>
+
           <span className="text-neutral-900">Unique Emotion</span>
         </div>
       </div>

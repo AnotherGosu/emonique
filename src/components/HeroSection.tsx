@@ -1,6 +1,6 @@
 import { cn } from "@/utils/cn";
 
-import { Heading, Section } from "./Typography";
+import { Heading, Section } from "@/components/Typography";
 
 interface HeroSectionProps extends React.PropsWithChildren {
   heading: string;

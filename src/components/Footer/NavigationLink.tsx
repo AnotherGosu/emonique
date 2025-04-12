@@ -19,9 +19,10 @@ export const NavigationLink = ({ title, href }: NavigationLinkProps) => {
     <Link
       href={`/${locale}${href}`}
       className={cn(
-        "transition",
+        "rounded-xs transition outline-none",
         "hover:text-neutral-300",
         "active:text-neutral-400",
+        "focus-visible:ring-2 focus-visible:ring-blue-500",
       )}
     >
       {title}

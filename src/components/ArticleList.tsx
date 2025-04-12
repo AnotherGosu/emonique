@@ -1,25 +1,22 @@
-import { cn } from "@/utils/cn";
-
-import { Heading, Paragraph } from "./Typography";
+import { Heading, Paragraph } from "@/components/Typography";
 
 interface ArticleListProps {
   items: Array<{ heading: string; paragraph: string }>;
-  className?: string;
 }
 
-export const ArticleList = ({ items, className }: ArticleListProps) => {
+export const ArticleList = ({ items }: ArticleListProps) => {
   return (
-    <ol className={cn("grid grid-cols-3 gap-8", className)}>
+    <ol className="flex flex-col gap-6">
       {items.map(({ heading, paragraph }, idx) => (
         <li key={heading}>
           <article>
-            <div className="mb-4 flex items-center gap-2">
+            <div className="mb-3 flex items-center gap-2">
               <Index idx={idx + 1} />
 
               <Heading level="h3">{heading}</Heading>
             </div>
 
-            <Paragraph variant="small">{paragraph}</Paragraph>
+            <Paragraph>{paragraph}</Paragraph>
           </article>
         </li>
       ))}

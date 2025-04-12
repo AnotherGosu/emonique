@@ -1,43 +1,60 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { Locale } from "@/types/common";
+
+import { IMAGE_BLUR } from "@/constants/common";
+
 import { cn } from "@/utils/cn";
 
 interface ArtistLinkProps {
-  id: string;
+  slug: string;
   name: string;
-  image: string;
-  description: string;
+  photo: string;
+  quote: string;
+  locale: Locale;
 }
 
 export const ArtistLink = ({
-  id,
+  slug,
   name,
-  image,
-  description,
+  photo,
+  quote,
+  locale,
 }: ArtistLinkProps) => {
   return (
     <Link
-      href={`/artists/${id}`}
+      href={`/${locale}/artists/${slug}`}
       className={cn(
-        "flex flex-col gap-4 rounded-xs p-3 transition duration-200 ease-in outline-none",
+        "group grid grid-rows-[20px_1fr_56px] gap-3 rounded-xs p-3 transition duration-200 ease-in outline-none",
         "hover:bg-neutral-900 hover:text-neutral-50",
-        "focus:bg-neutral-900 focus:text-neutral-50 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
         "active:bg-neutral-800 active:text-neutral-50",
+        "focus-visible:bg-neutral-900 focus-visible:text-neutral-50",
       )}
     >
-      <div className="text-lg font-medium">{name}</div>
+      <span className="text-sm font-medium">{name}</span>
 
-      <div className="relative aspect-square">
+      <div className="relative">
         <Image
-          src={image}
+          src={photo}
           alt=""
           fill
-          className="object-cover"
+          blurDataURL={IMAGE_BLUR}
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+          className="rounded-xs object-cover"
         />
       </div>
 
-      <p className="line-clamp-3 text-sm">{description}</p>
+      <p
+        className={cn(
+          "line-clamp-3 text-sm text-neutral-600 transition duration-200 ease-in",
+          "group-hover:text-neutral-200",
+          "group-active:text-neutral-200",
+          "group-focus-visible:text-neutral-200",
+        )}
+      >
+        {`“${quote}”`}
+      </p>
     </Link>
   );
 };

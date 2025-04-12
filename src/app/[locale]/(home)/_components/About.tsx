@@ -1,30 +1,26 @@
+import { PropsWithDict } from "@/types/common";
+
 import { cn } from "@/utils/cn";
 
 import { ButtonLink } from "@/components/ButtonLink";
 import { Heading, Paragraph, Section } from "@/components/Typography";
 
-export const About = () => {
+export const About = ({ dict }: PropsWithDict) => {
   return (
     <div className="bg-neutral-900 pt-50 pb-20 text-neutral-50">
       <Section className="flex flex-col gap-8">
         <div className="flex items-center justify-between gap-2">
-          <Heading>Art Agency</Heading>
+          <Heading>{dict["headings"]["art_agency"]}</Heading>
 
           <ButtonLink
             href="/about"
             variant="alt"
           >
-            About us
+            {dict["buttons"]["about_us"]}
           </ButtonLink>
         </div>
 
-        <Paragraph>
-          <b>Emonique</b> is more than an art platform. It is a global stage for
-          artists to share their emotions and uniqueness. We connect creators
-          with collectors, turning passion into legacy and originality into
-          timeless treasures. Every piece tells a story, and we bring those
-          stories to the world.
-        </Paragraph>
+        <Paragraph>{dict["home"]["agency"]}</Paragraph>
 
         <div className="my-8 h-px w-full bg-neutral-50" />
 
@@ -39,13 +35,11 @@ export const About = () => {
               level="h3"
               className="mb-4"
             >
-              Hidden Talents
+              {dict["headings"]["hidden_talents"]}
             </Heading>
 
-            <Paragraph variant="small">
-              Art is everywhere, yet many incredible artists remain unseen. We
-              seek out undiscovered creators and share their art with those who
-              value originality, passion, and storytelling.
+            <Paragraph className="text-sm leading-loose">
+              {dict["home"]["benefit_1"]}
             </Paragraph>
           </article>
 
@@ -54,14 +48,11 @@ export const About = () => {
               level="h3"
               className="mb-4"
             >
-              Beyond the Canvas
+              {dict["headings"]["beyond_canvas"]}
             </Heading>
 
-            <Paragraph variant="small">
-              We believe that every artwork holds more than just aesthetic value
-              — it carries the artist’s personal journey. Our mission is to help
-              collectors find pieces that deeply connect with their own
-              experiences.
+            <Paragraph className="text-sm leading-loose">
+              {dict["home"]["benefit_2"]}
             </Paragraph>
           </article>
 
@@ -70,13 +61,11 @@ export const About = () => {
               level="h3"
               className="mb-4"
             >
-              Accessible and Effortless
+              {dict["headings"]["focus_on_art"]}
             </Heading>
 
-            <Paragraph variant="small">
-              Focus on art and leave all operations to us. By bridging the gap
-              between artists and collectors, we simplify communication, ensure
-              a smooth purchasing process, and handle logistics with care.
+            <Paragraph className="text-sm leading-loose">
+              {dict["home"]["benefit_3"]}
             </Paragraph>
           </article>
         </div>

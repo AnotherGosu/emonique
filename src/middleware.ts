@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { LOCALES } from "@/constants/common";
 
-import { getLocale } from "@/utils/getLocale";
+import { getLocale } from "@/utils/i18";
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -21,5 +21,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|favicon.ico).*)"],
+  matcher: ["/((?!api|_next|icon|favicon|manifest|opengraph-image).*)"],
 };

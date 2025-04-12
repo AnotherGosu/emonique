@@ -1,1 +1,452 @@
-{}
+{
+  "headings": {
+    "about_artist": "About Artist",
+    "about_artwork": "About Artwork",
+    "about_us": "About Us",
+    "art_agency": "Art Agency",
+    "artist": "Artist",
+    "artists": "Artists",
+    "artwork": "Artwork",
+    "artworks": "Artworks",
+    "beyond_canvas": "Beyond Canvas",
+    "blog": "Blog",
+    "contact_us": "Contact Us",
+    "dimensions": "Dimensions",
+    "error": "Error",
+    "focus_on_art": "Focus on Art ",
+    "for_artists": "For Artists",
+    "for_collectors": "For Collectors",
+    "gallery": "Gallery",
+    "hidden_talents": "Hidden Talents",
+    "highlights": "Highlights",
+    "inquire": "Inquire",
+    "medium": "Medium",
+    "menu": "Menu",
+    "not_found": "Not Found",
+    "price": "Price",
+    "privacy_policy": "Privacy Policy",
+    "similar_artworks": "Similar Artworks",
+    "terms_of_service": "Terms of Service",
+    "year_of_creation": "Year of Creation",
+    "message_sent": "Message Sent",
+    "something_went_wrong": "Something Went Wrong"
+  },
+  "buttons": {
+    "about_us": "About us",
+    "view_all": "View all",
+    "learn_more": "Learn more",
+    "send": "Send",
+    "home": "Home",
+    "close": "Close"
+  },
+  "phrases": {
+    "email": "Email",
+    "name": "Name",
+    "message": "Message",
+    "all_rights_reserved": "All rights reserved.",
+    "error": "Oops! Something went abstract. Try refreshing or take a step back!",
+    "not_found": "Oops! This artwork must have been sold… or maybe it never existed!"
+  },
+  "home": {
+    "agency": "Emonique is more than an art platform. It is a global stage for artists to share their emotions and uniqueness. We connect creators with collectors, turning passion into legacy and originality into timeless treasures. Every piece tells a story, and we bring those stories to the world.",
+    "benefit_1": "Many incredible artists remain unseen, not for lack of talent, but for lack of opportunity. We seek out undiscovered creators and share their art with those who value originality, passion, and storytelling.",
+    "benefit_2": "We believe that every artwork holds more than just aesthetic value — it carries the artist’s personal journey. Our mission is to help collectors find pieces that deeply connect with their own experiences.",
+    "benefit_3": "Focus on art and leave all operations to us. By bridging the gap between artists and collectors, we facilitate clear communication, coordinating secure transactions and reliable international delivery.",
+    "artworks": "Art has the power to move, inspire, and connect. Our collection brings together works that evoke deep emotion, telling stories through color, texture, and form. Find a piece that speaks to you.",
+    "artists": "Behind every artwork is an artist with a unique voice. We proudly represent creators who create works that evoke thought and feeling, offering collectors the chance to connect with their stories.",
+    "for_collectors": "Interested in acquiring one of our artworks? Learn more about how we make the process simple, from discovery to bringing the piece into your space.",
+    "for_artists": "Looking for an opportunity to present your artwork to a global audience? Our agency offers artists a platform to gain visibility and connect with buyers. Showcase your work to those who truly value it.",
+    "contact": "Have inquiries or looking to partner with us? We welcome the opportunity to connect. Reach out for information on artists, artworks, collaborations, or any other assistance."
+  },
+  "contact": {
+    "artwork": "Interested in this artwork or have questions? Whether you’re ready to purchase or just want more details, feel free to reach out — we’ll get back to you shortly.",
+    "artist": "Want to learn more about this artist or their work? We’d love to hear from you. Feel free to get in touch with any questions or inquiries.",
+    "success": "Thank you for contacting us! We’ve received your message and will get back to you shortly.",
+    "error": "It looks like there was an issue submitting your message. Please try again in a moment or feel free to email us directly.",
+    "google": "This site is protected by reCAPTCHA and the Google <a href='https://policies.google.com/privacy'>Privacy Policy</a> and <a href='https://policies.google.com/terms'>Terms of Service</a> apply."
+  },
+  "about": {
+    "index": {
+      "info": [
+        "Emonique is a professional platform dedicated to introducing original artworks by artists to the global market. We believe that art created by human hands carries a unique and irreplaceable value.",
+        "We connect talented artists with collectors, galleries, and art enthusiasts around the world—ensuring that their original pieces are appreciated, protected, and professionally presented beyond borders."
+      ],
+      "contact": [
+        "Please feel free to contact us through the form provided or reach out to us directly.",
+        "Stay connected with us through our official social media channels."
+      ]
+    },
+    "for_collectors": {
+      "info": "At Emonique, we strive to simplify the art purchasing process for collectors. Our goal is to connect you with exceptional artwork while ensuring a seamless and enjoyable experience. Here’s how our service works.",
+      "list": [
+        {
+          "heading": "Explore Our Gallery",
+          "paragraph": "Browse our curated collection to find a unique piece that resonates with you. If you’re interested in making a purchase, feel free to contact us for additional details."
+        },
+        {
+          "heading": "Confirm & Invoice",
+          "paragraph": "After a brief discussion about the preferred delivery method, we will issue an invoice for your order. The invoice will include all necessary details regarding payment and delivery."
+        },
+        {
+          "heading": "Secure Payment & Shipping",
+          "paragraph": "Once the payment is processed, we will arrange the shipment and provide you with all the necessary tracking information. Throughout the shipping process, we will keep you informed with regular updates on the status of your order."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does price include tax and shipping expenses?",
+          "answer": "No, the listed price doesn’t include taxes or shipping costs. If you’re ordering from outside South Korea, you may need to pay import taxes, VAT, or customs fees, depending on your country’s regulations. These are the buyer’s responsibility. We’ll discuss shipping details with you personally and add the shipping cost to your invoice before confirming the order."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "Currently, we accept bank transfers only. Once your order is confirmed, we’ll provide our bank account details and issue an invoice for the total amount, including shipping (if applicable). Payment must be completed before we ship the artwork."
+        },
+        {
+          "question": "Can I return or exchange an artwork?",
+          "answer": "As a general policy, we do not accept returns or exchanges for artworks, due to their unique and original nature. However, if your artwork arrives damaged and you believe it was caused by our handling or packaging, please contact us immediately with photos and details. If the issue is confirmed to be our fault, we will do our best to find a fair solution — whether it’s a refund, repair, or replacement (if possible)."
+        },
+        {
+          "question": "Do you provide framing services?",
+          "answer": "Currently, we do not offer framing services. Any images showing the artwork in a frame are for illustration purposes only, to help you visualize how the piece might look when displayed. All artworks are shipped unframed, unless otherwise stated."
+        }
+      ]
+    },
+    "for_artists": {
+      "info": "At Emonique, we are dedicated to helping artists connect with collectors and gain the recognition they deserve. Our goal is to provide a seamless platform for promoting and selling artworks while ensuring that each piece is presented in the best possible way. Here’s how you can collaborate with us.",
+      "list": [
+        {
+          "heading": "Get in Touch",
+          "paragraph": "If you’re interested in collaborating with us, feel free to reach out. We value each artist’s individuality, so we encourage you to share your background, artistic journey, and portfolio. If your style aligns with our vision, we would be delighted to explore a partnership."
+        },
+        {
+          "heading": "Agreement & Terms",
+          "paragraph": "After a brief discussion of the details, we formalize our collaboration with a contract. This agreement outlines key aspects such as pricing, ownership rights, and specific preferences to ensure a clear and transparent partnership."
+        },
+        {
+          "heading": "Promotion & Exposure",
+          "paragraph": "After preparing your artwork, we showcase it on our website and promote it through our social media channels. Additionally, we actively reach out to potential collectors who may be interested in your work, ensuring it gets the visibility it deserves."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What kind of artists do you work with?",
+          "answer": "We work with a diverse range of artists, including painters, sculptors, and photographers — with a focus on hand-crafted, original work. However, we only collaborate with artists who align with our vision: those who are passionate, authentic, and committed to sharing their art with a global audience. We carefully select each artist to ensure their work reflects the quality and creativity we stand for at Emonique."
+        },
+        {
+          "question": "Can I submit digital or mixed-media art?",
+          "answer": "At this time, we only accept physical artworks — such as paintings, drawings, sculptures, and other hand-crafted pieces. We focus on tangible, original art that can be exhibited and shipped to collectors around the world. Digital-only works or art intended solely for online display are not currently eligible."
+        },
+        {
+          "question": "Do you take a commission on sales?",
+          "answer": "Yes, we take a 20% commission on the sale price of each artwork. This helps cover our core services, including connecting artists with collectors and handling sales logistics. All other services — such as social media promotion, exhibition opportunities, and artist support — are provided free of charge. We’re here to help you grow without placing a financial burden on your creative process."
+        }
+      ]
+    }
+  },
+  "meta": {
+    "home": "Emonique connects discerning collectors with original, hand-crafted artworks by emerging contemporary artists. We curate meaningful artistic experiences through personalized service and global reach.",
+    "artworks": "Browse our curated collection of original, hand-crafted artworks from emerging artists around the world. Each piece offers a unique and tangible addition to any collection.",
+    "artists": "Discover the artists represented by Emonique. Learn about the backgrounds, styles, and creative approaches of emerging Korean painters, sculptors, and visual artists.",
+    "about": "Learn more about Emonique’s mission, values, and the people behind our work. Discover how we support emerging artists and connect them with collectors worldwide.",
+    "blog": "Stay informed with the latest from Emonique — including news, announcements, artist interviews, and behind-the-scenes insights from the world of contemporary art.",
+    "for_collectors": "Explore how Emonique supports art collectors with personalized guidance, trusted logistics, and access to unique original works. Find answers to common questions in our FAQ section.",
+    "for_artists": "Interested in collaborating with Emonique? Learn how we support emerging artists through global exposure, sales management, and creative partnership opportunities.",
+    "privacy_policy": "Read Emonique’s Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website or use our services.",
+    "terms_of_service": "Review Emonique’s Terms of Service to learn about the rules, rights, and responsibilities that apply when using our website and engaging with our services.",
+    "keywords": [
+      "original art",
+      "emerging artists",
+      "contemporary art",
+      "art for sale",
+      "buy original artwork",
+      "hand-crafted art",
+      "art agency",
+      "international art collectors",
+      "artist promotion",
+      "online art gallery",
+      "art marketplace",
+      "art collection",
+      "art logistics",
+      "art curation",
+      "artist support",
+      "art interviews",
+      "artist submissions"
+    ]
+  },
+  "terms_of_service": {
+    "intro": "Welcome to Emonique («Company», «we», «us», or «our»). These Terms of Service («Terms») govern your use of our website [www.emonique.com] (the «Site») and our services, including the purchase and sale of original artworks («Services»). By accessing or using our Services, you agree to be bound by these Terms. If you do not agree, please do not use our Services.",
+    "section_1": {
+      "heading": "1. Definitions",
+      "items": [
+        "«User» («you») refers to anyone who accesses or uses the Site, including buyers, artists, and visitors.",
+        "«Artist» refers to any individual or entity selling artwork through our platform.",
+        "«Buyer» refers to any individual or entity purchasing artwork through our platform.",
+        "«Artwork» refers to original visual art pieces made available for sale."
+      ]
+    },
+    "section_2": {
+      "heading": "2. Eligibility",
+      "content": "You must be at least 18 years old to use our Services. By using our Site, you represent that you are legally capable of entering into a binding agreement. If you are using our Services on behalf of an entity, you warrant that you have the authority to bind that entity to these Terms."
+    },
+    "section_3": {
+      "heading": "3. Account Registration & Security",
+      "items": [
+        "You may need to create an account to access certain Services.",
+        "You are responsible for maintaining the confidentiality of your account and password.",
+        "You must notify us immediately of any unauthorized access or use of your account.",
+        "We reserve the right to suspend or terminate accounts that violate these Terms."
+      ]
+    },
+    "section_4": {
+      "heading": "4. Sales & Transactions",
+      "sub_section_1": {
+        "heading": "4.1. For Buyers",
+        "items": [
+          "When you purchase artwork, you agree to pay the listed price plus applicable taxes and shipping fees.",
+          "All payments must be made via our designated payment processors (e.g., PayPal, Stripe).",
+          "Once an order is placed, it is binding and cannot be canceled unless permitted by these Terms."
+        ]
+      },
+      "sub_section_2": {
+        "heading": "4.2. For Artists",
+        "items": [
+          "By listing artwork on our platform, you grant us a non-exclusive, worldwide license to display and promote your artwork.",
+          "You must provide accurate descriptions and pricing for your artwork.",
+          "Artists are responsible for fulfilling orders and ensuring safe and timely delivery.",
+          "We may deduct a commission from the sale price as outlined in our fee policy."
+        ]
+      },
+      "sub_section_3": {
+        "heading": "4.3. Shipping & Delivery",
+        "items": [
+          "We facilitate shipping through third-party logistics providers (e.g., DHL, FedEx).",
+          "Buyers are responsible for any customs duties or import taxes.",
+          "Emonique is not liable for delays caused by shipping carriers or customs authorities."
+        ]
+      },
+      "sub_section_4": {
+        "heading": "4.4. Returns & Refunds",
+        "items": [
+          "Due to the nature of original artworks, all sales are final unless the artwork arrives damaged or significantly differs from its description.",
+          "Buyers must notify us of any issues within 48 hours of delivery to request a refund.",
+          "Refunds, if approved, will be issued within 14 business days via the original payment method."
+        ]
+      }
+    },
+    "section_5": {
+      "heading": "5. Intellectual Property Rights",
+      "items": [
+        "All content on our Site, including text, images, graphics, and trademarks, is owned by Emonique or its licensors and is protected by intellectual property laws.",
+        "You may not copy, reproduce, distribute, or exploit any part of our Site or Services without our prior written consent.",
+        "Artists retain all copyrights to their artworks but grant Emonique the right to display and market their work."
+      ]
+    },
+    "section_6": {
+      "heading": "6. Prohibited Activities",
+      "content": "We reserve the right to suspend or terminate accounts that violate these rules. You agree not to:",
+      "items": [
+        "Use our Site for any fraudulent, unlawful, or harmful purpose.",
+        "Interfere with or disrupt the functionality of our Services.",
+        "Post false, misleading, or infringing content.",
+        "Attempt to gain unauthorized access to our Site, servers, or data."
+      ]
+    },
+    "section_7": {
+      "heading": "7. Disclaimers & Limitation of Liability",
+      "sub_section_1": {
+        "heading": "7.1. Disclaimer of Warranties",
+        "items": [
+          "Our Services are provided «as is» and «as available» without any warranties, express or implied.",
+          "We do not guarantee uninterrupted or error-free operation of our Site.",
+          "We do not endorse or guarantee the quality or authenticity of any artwork sold through our platform."
+        ]
+      },
+      "sub_section_2": {
+        "heading": "7.2. Limitation of Liability",
+        "content": "In no event shall our total liability exceed the amount paid for the disputed transaction. To the maximum extent permitted by law, Emonique shall not be liable for:",
+        "items": [
+          "Indirect, incidental, or consequential damages.",
+          "Loss of data, revenue, or business opportunities.",
+          "Any issues arising from transactions between buyers and artists."
+        ]
+      }
+    },
+    "section_8": {
+      "heading": "8. Indemnification",
+      "content": "You agree to indemnify and hold harmless Emonique, its officers, directors, employees, and affiliates from any claims, damages, liabilities, or expenses arising from:",
+      "items": [
+        "Your use of our Site and Services.",
+        "Your violation of these Terms.",
+        "Any disputes between buyers and artists."
+      ]
+    },
+    "section_9": {
+      "heading": "9. Privacy Policy",
+      "content": "Our Privacy Policy governs how we collect, use, and protect your personal information. By using our Services, you acknowledge and agree to our data practices."
+    },
+    "section_10": {
+      "heading": "10. Dispute Resolution & Governing Law",
+      "sub_section_1": {
+        "heading": "10.1. Governing Law",
+        "content": "These Terms shall be governed by and construed in accordance with the laws of [Insert Jurisdiction, e.g., South Korea, UK, or the US], without regard to its conflict of laws principles."
+      },
+      "sub_section_2": {
+        "heading": "10.2. Dispute Resolution",
+        "items": [
+          "For EU/UK Users: Disputes may be resolved through the Online Dispute Resolution (ODR) Platform.",
+          "For US & International Users: Disputes shall be resolved through binding arbitration in [Insert Jurisdiction].",
+          "Exceptions: Either party may seek relief in a small claims court or for injunctive relief related to intellectual property."
+        ]
+      }
+    },
+    "section_11": {
+      "heading": "11. Termination",
+      "content": "Termination may be immediate and without prior notice. We reserve the right to suspend or terminate your access to our Services if you:",
+      "items": [
+        "Violate these Terms.",
+        "Engage in fraudulent or illegal activity.",
+        "Cause harm to our platform or users."
+      ]
+    },
+    "section_12": {
+      "heading": "12. Changes to These Terms",
+      "content": "We may update these Terms periodically. The most recent version will be posted on our Site, and continued use of our Services constitutes acceptance of the updated Terms."
+    },
+    "section_13": {
+      "heading": "13. Contact Us",
+      "content": "If you have any questions about these Terms, please contact us at:",
+      "items": ["Email: contact@emonique.com"]
+    }
+  },
+  "privacy_policy": [
+    {
+      "paragraph": [
+        "Welcome to Emonique («Company», «we», «us», or «our»). We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website (the «Site») and use our services.",
+        "By accessing our Site and services, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree, please discontinue use of our services immediately."
+      ]
+    },
+    {
+      "heading": "Information We Collect",
+      "paragraph": "We collect the following categories of personal data, depending on your interactions with our Site and services.",
+      "sections": [
+        {
+          "heading": "Information You Provide Directly",
+          "list": [
+            "For Customers: Name, email address, phone number, shipping/billing address, payment details.",
+            "For Artists & Partners: Name, contact information, portfolio, tax identification number, payment details.",
+            "For Subscribers & Inquiries: Name, email address, and any messages you send through contact forms."
+          ]
+        },
+        {
+          "heading": "Information We Collect Automatically",
+          "paragraph": "When you visit our Site, we may collect:",
+          "list": [
+            "Device and Log Data: IP address, browser type, pages visited, and access times.",
+            "Cookies & Tracking Technologies: Session cookies, analytics tools."
+          ]
+        },
+        {
+          "heading": "Information from Third Parties",
+          "paragraph": "We may receive information from payment providers or social media platforms if you interact with our ads or accounts."
+        }
+      ]
+    },
+    {
+      "heading": "How We Use Your Information",
+      "paragraph": "We use your personal data for the following purposes:",
+      "list": [
+        "To process transactions: Including payments, orders, and shipping.",
+        "To provide customer support: Handling inquiries, complaints, or disputes.",
+        "To improve our website and services: Conducting analytics and tracking performance.",
+        "To comply with legal obligations: Tax reporting, fraud prevention, and regulatory compliance.",
+        "For marketing & communications (with consent): Sending newsletters, promotions, and event updates."
+      ]
+    },
+    {
+      "heading": "Legal Basis for Processing (GDPR Compliance)",
+      "paragraph": "For users in the European Economic Area (EEA), United Kingdom, and Switzerland, we process personal data based on:",
+      "list": [
+        "Contractual necessity: To fulfill transactions or provide services.",
+        "Legal obligations: Compliance with tax laws, anti-fraud measures.",
+        "Legitimate interests: Website analytics, customer service improvements.",
+        "Consent: For marketing communications (you can withdraw consent anytime)."
+      ]
+    },
+    {
+      "heading": "Data Sharing & Third-Party Disclosures",
+      "paragraph": "We do not sell your personal data. However, we may share your data with:",
+      "list": [
+        "Service providers: Payment processors, shipping carriers, cloud storage services.",
+        "Legal authorities: When required by law or in response to valid legal requests.",
+        "Business transfers: If Emonique is acquired, merged, or undergoes a business restructuring."
+      ]
+    },
+    {
+      "heading": "Data Retention & Security",
+      "paragraph": "We retain your personal data only as long as necessary for the purposes outlined in this Privacy Policy.",
+      "list": [
+        "Customer and order data: Retained for up to 5 years for tax and legal compliance.",
+        "Marketing data: Retained until you unsubscribe.",
+        "Security: We use SSL encryption, secure payment gateways, and restricted data access to protect your information."
+      ]
+    },
+    {
+      "heading": "Your Rights (GDPR & CCPA Compliance)",
+      "sections": [
+        {
+          "heading": "Your Rights under GDPR (EU/UK Residents)",
+          "paragraph": "You have the right to:",
+          "list": [
+            "Access your personal data.",
+            "Correct inaccurate or incomplete data.",
+            "Request deletion («right to be forgotten»).",
+            "Object to certain data processing activities.",
+            "Withdraw consent for marketing at any time.",
+            "Request data portability to another service provider."
+          ],
+          "note": "To exercise your rights, email us at privacy@emonique.com."
+        },
+        {
+          "heading": "Your Rights under CCPA (California Residents)",
+          "list": [
+            "Request disclosure of collected personal data.",
+            "Opt-out of data sharing for advertising purposes.",
+            "Request deletion of your personal data."
+          ],
+          "note": "To exercise your CCPA rights, submit a request via privacy@emonique.com."
+        }
+      ]
+    },
+    {
+      "heading": "Cookies & Tracking Technologies",
+      "paragraph": "We use cookies for:",
+      "list": [
+        "Essential website functionality (session cookies).",
+        "Analytics and performance tracking.",
+        "Personalized advertising."
+      ],
+      "note": "You can manage cookie settings via your browser."
+    },
+    {
+      "heading": "International Data Transfers",
+      "paragraph": "As we operate globally, your personal data may be processed outside your home country, including in the United States, South Korea, and the EU. We ensure adequate safeguards, such as:",
+      "list": [
+        "Standard Contractual Clauses (SCCs) for EU users.",
+        "Privacy Shield alternatives where applicable."
+      ]
+    },
+    {
+      "heading": "Children’s Privacy",
+      "paragraph": "Our services are not intended for children under 16. For California residents, our services are not intended for children under 13. We do not knowingly collect data from minors. If you believe a child has provided us with personal information, contact us at privacy@emonique.com for deletion."
+    },
+    {
+      "heading": "Changes to this Privacy Policy",
+      "paragraph": "We may update this Privacy Policy periodically. The latest version will always be posted on our Site with the “Last Updated” date. If we make significant changes, we will notify users via email or a prominent website notice."
+    },
+    {
+      "heading": "Contact Us",
+      "paragraph": "If you have questions about this Privacy Policy, contact us at:",
+      "list": ["Email: privacy@emonique.com"]
+    }
+  ]
+}

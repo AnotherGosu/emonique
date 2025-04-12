@@ -1,31 +1,27 @@
 "use client";
 
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
-
-import { Locale } from "@/types/common";
+import { useDictionary } from "@/hooks/useDictionary";
 
 import { ButtonLink } from "@/components/ButtonLink";
+import { Loader } from "@/components/Status";
 import { Heading, Section } from "@/components/Typography";
 
-export default function Error({
-  error,
-}: {
-  error: Error & { digest?: string };
-}) {
-  const { locale } = useParams<{ locale: Locale }>();
-
-  useEffect(() => {
-    console.error(error);
-  }, [error]);
+export default function Error() {
+  const dict = useDictionary();
 
   return (
-    <Section className="flex h-svh flex-col items-center justify-center gap-8 text-center">
-      <Heading level="h1">Error</Heading>
+    <Section className="flex h-svh items-center justify-center">
+      {dict ? (
+        <div className="flex flex-col items-center gap-8 text-center">
+          <Heading level="h1">{dict["headings"]["error"]}</Heading>
 
-      <p>Oops! Something went abstract. Try refreshing or take a step back!</p>
+          <p>{dict["phrases"]["error"]}</p>
 
-      <ButtonLink href={`/${locale}`}>Home</ButtonLink>
+          <ButtonLink href="/">{dict["buttons"]["home"]}</ButtonLink>
+        </div>
+      ) : (
+        <Loader />
+      )}
     </Section>
   );
 }

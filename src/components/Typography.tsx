@@ -1,20 +1,20 @@
-import { cn } from "@/utils/cn";
+import { RichTextRaw } from "@/types/common";
 
-interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
-  level?: "h1" | "h2" | "h3";
-}
+import { cn } from "@/utils/cn";
 
 export const Heading = ({
   level = "h2",
   className,
   ...props
-}: HeadingProps) => {
+}: React.HTMLAttributes<HTMLHeadingElement> & {
+  level?: "h1" | "h2" | "h3";
+}) => {
   switch (level) {
     case "h1": {
       return (
         <h1
           {...props}
-          className={cn("text-6xl font-bold", className)}
+          className={cn("text-5xl font-bold", className)}
         />
       );
     }
@@ -39,32 +39,23 @@ export const Heading = ({
   }
 };
 
-interface ParagraphProps extends React.HTMLAttributes<HTMLParagraphElement> {
-  variant?: "def" | "small";
-}
-
 export const Paragraph = ({
-  variant = "def",
   className,
   ...props
-}: ParagraphProps) => {
+}: React.HTMLAttributes<HTMLParagraphElement>) => {
   return (
     <p
       {...props}
-      className={cn(
-        "text-sm leading-relaxed",
-        { "sm:text-base": variant === "def" },
-        className,
-      )}
+      className={cn("leading-loose", className)}
     />
   );
 };
 
-interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
-  required?: boolean;
-}
-
-export const Label = ({ required, className, ...props }: LabelProps) => {
+export const Label = ({
+  required,
+  className,
+  ...props
+}: React.LabelHTMLAttributes<HTMLLabelElement> & { required?: boolean }) => {
   return (
     <label
       {...props}
@@ -86,5 +77,44 @@ export const Section = ({
       {...props}
       className={cn("mx-auto w-full max-w-6xl px-4", className)}
     />
+  );
+};
+
+export const List = ({
+  items,
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLUListElement> & {
+  items: string[];
+}) => {
+  return (
+    <ul
+      {...props}
+      className={cn("flex list-inside list-disc flex-col gap-2", className)}
+    >
+      {items.map((item, key) => (
+        <li key={key}>{item}</li>
+      ))}
+    </ul>
+  );
+};
+
+export const RichText = ({
+  raw,
+  className,
+}: {
+  raw: RichTextRaw;
+  className?: string;
+}) => {
+  return (
+    <div className={cn("flex flex-col gap-3", className)}>
+      {raw.children.map((node, idx) => {
+        if (node.type === "paragraph") {
+          return <Paragraph key={idx}>{node.children[0].text}</Paragraph>;
+        }
+
+        return null;
+      })}
+    </div>
   );
 };

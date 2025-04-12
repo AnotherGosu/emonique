@@ -1,42 +1,31 @@
-import { ARTWORKS } from "@/constants/common";
+import { Suspense } from "react";
 
-import { cn } from "@/utils/cn";
+import { Locale, PropsWithDict } from "@/types/common";
 
-import { ArtworkLink } from "@/components/ArtworkLink";
+import { ArtworkGridFallback } from "@/components/ArtworkGrid";
 import { ButtonLink } from "@/components/ButtonLink";
 import { Heading, Paragraph, Section } from "@/components/Typography";
 
-export const Artworks = () => {
+import { FeaturedArtworks } from "./FeaturedArtworks";
+
+interface ArtworksProps extends PropsWithDict {
+  locale: Locale;
+}
+
+export const Artworks = ({ locale, dict }: ArtworksProps) => {
   return (
     <Section className="flex flex-col gap-8">
       <div className="flex items-center justify-between gap-2">
-        <Heading>Artworks</Heading>
+        <Heading>{dict["headings"]["artworks"]}</Heading>
 
-        <ButtonLink href="/gallery">View all</ButtonLink>
+        <ButtonLink href="/gallery">{dict["buttons"]["view_all"]}</ButtonLink>
       </div>
 
-      <Paragraph>
-        Art has the power to move, inspire, and connect. Our collection brings
-        together works that evoke deep emotion, telling stories through color,
-        texture, and form. Find a piece that speaks to you.
-      </Paragraph>
+      <Paragraph>{dict["home"]["artworks"]}</Paragraph>
 
-      <div
-        className={cn(
-          "grid grid-cols-1 gap-x-16 gap-y-8",
-          "sm:grid-cols-2 lg:grid-cols-3",
-        )}
-      >
-        {ARTWORKS.slice(0, 3).map((artwork) => (
-          <ArtworkLink
-            key={artwork.id}
-            id={artwork.id}
-            image={artwork.images[0]}
-            name={artwork.name}
-            artist={artwork.artist}
-          />
-        ))}
-      </div>
+      <Suspense fallback={<ArtworkGridFallback />}>
+        <FeaturedArtworks locale={locale} />
+      </Suspense>
     </Section>
   );
 };

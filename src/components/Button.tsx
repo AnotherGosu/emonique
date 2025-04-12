@@ -1,5 +1,7 @@
 import { cn } from "@/utils/cn";
 
+import { Spinner } from "@/components/Status";
+
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "def" | "alt";
   isLoading?: boolean;
@@ -19,15 +21,15 @@ export const Button = ({
       type={type}
       disabled={disabled || isLoading}
       className={cn(
-        "flex h-8 w-max items-center justify-center gap-2 rounded-2xl px-3 text-sm",
-        "sm:h-10 sm:text-base",
-        "transition duration-300 outline-none [&>svg]:size-5",
-        "focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+        "flex h-10 w-fit items-center justify-center gap-2 rounded-lg px-3",
+        "transition duration-300 outline-none [&>svg]:size-4",
+        "focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2",
+        "disabled:pointer-events-none disabled:opacity-70",
         {
           [cn(
             "bg-neutral-900 text-neutral-50",
-            "hover:bg-neutral-800",
-            "active:bg-neutral-700",
+            "hover:bg-neutral-700",
+            "active:bg-neutral-600",
           )]: variant === "def",
           [cn(
             "bg-neutral-50",
@@ -39,6 +41,7 @@ export const Button = ({
       )}
       {...props}
     >
+      {isLoading && <Spinner />}
       {children}
     </button>
   );

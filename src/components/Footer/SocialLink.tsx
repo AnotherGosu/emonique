@@ -10,9 +10,11 @@ export const SocialLink = ({ href, children }: SocialLinkProps) => {
       href={href}
       target="_blank"
       className={cn(
-        "size-5 *:fill-neutral-50 *:transition",
+        "size-5 rounded-xs transition outline-none",
+        "*:fill-neutral-50 *:transition",
         "*:hover:fill-neutral-300",
         "*:active:fill-neutral-400",
+        "focus-visible:ring-2 focus-visible:ring-blue-500",
       )}
     >
       {children}
