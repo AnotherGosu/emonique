@@ -172,151 +172,161 @@
       "작가 신청"
     ]
   },
-  "terms_of_service": {
-    "intro": "Welcome to Emonique («Company», «we», «us», or «our»). These Terms of Service («Terms») govern your use of our website [www.emonique.com] (the «Site») and our services, including the purchase and sale of original artworks («Services»). By accessing or using our Services, you agree to be bound by these Terms. If you do not agree, please do not use our Services.",
-    "section_1": {
-      "heading": "Definitions",
-      "items": [
-        "«User» («you») refers to anyone who accesses or uses the Site, including buyers, artists, and visitors.",
-        "«Artist» refers to any individual or entity selling artwork through our platform.",
-        "«Buyer» refers to any individual or entity purchasing artwork through our platform.",
-        "«Artwork» refers to original visual art pieces made available for sale."
+  "terms_of_service": [
+    {
+      "paragraph": [
+        "Emonique (이하 «회사» 또는 «당사»)는 (이하 «사이트») 및 사이트를 통해 제공되는 예술작품 구매 및 판매 서비스 (이하 «서비스»)를 운영합니다.",
+        "이용자는 본 서비스를 이용함으로써 본 약관에 동의한 것으로 간주됩니다. 동의하지 않으실 경우, 서비스를 이용하실 수 없습니다."
       ]
     },
-    "section_2": {
-      "heading": "Eligibility",
-      "content": "You must be at least 18 years old to use our Services. By using our Site, you represent that you are legally capable of entering into a binding agreement. If you are using our Services on behalf of an entity, you warrant that you have the authority to bind that entity to these Terms."
-    },
-    "section_3": {
-      "heading": "Account Registration & Security",
-      "items": [
-        "You may need to create an account to access certain Services.",
-        "You are responsible for maintaining the confidentiality of your account and password.",
-        "You must notify us immediately of any unauthorized access or use of your account.",
-        "We reserve the right to suspend or terminate accounts that violate these Terms."
+    {
+      "heading": "정의",
+      "list": [
+        "«이용자»: 사이트에 접속하거나 서비스를 이용하는 모든 개인 또는 단체 (작가, 구매자 등).",
+        "«작가»: 당사 플랫폼을 통해 예술작품을 판매하는 자.",
+        "«구매자» (또는 «컬렉터»): 당사 플랫폼을 통해 예술작품을 구매하는 자.",
+        "«작품»: 플랫폼을 통해 판매되는 원화 및 시각 예술 작품."
       ]
     },
-    "section_4": {
-      "heading": "Sales & Transactions",
-      "sub_section_1": {
-        "heading": "For Buyers",
-        "items": [
-          "When you purchase artwork, you agree to pay the listed price plus applicable taxes and shipping fees.",
-          "All payments must be made via our designated payment processors (e.g., PayPal, Stripe).",
-          "Once an order is placed, it is binding and cannot be canceled unless permitted by these Terms."
-        ]
-      },
-      "sub_section_2": {
-        "heading": "For Artists",
-        "items": [
-          "By listing artwork on our platform, you grant us a non-exclusive, worldwide license to display and promote your artwork.",
-          "You must provide accurate descriptions and pricing for your artwork.",
-          "Artists are responsible for fulfilling orders and ensuring safe and timely delivery.",
-          "We may deduct a commission from the sale price as outlined in our fee policy."
-        ]
-      },
-      "sub_section_3": {
-        "heading": "Shipping & Delivery",
-        "items": [
-          "We facilitate shipping through third-party logistics providers (e.g., DHL, FedEx).",
-          "Buyers are responsible for any customs duties or import taxes.",
-          "Emonique is not liable for delays caused by shipping carriers or customs authorities."
-        ]
-      },
-      "sub_section_4": {
-        "heading": "Returns & Refunds",
-        "items": [
-          "Due to the nature of original artworks, all sales are final unless the artwork arrives damaged or significantly differs from its description.",
-          "Buyers must notify us of any issues within 48 hours of delivery to request a refund.",
-          "Refunds, if approved, will be issued within 14 business days via the original payment method."
-        ]
-      }
-    },
-    "section_5": {
-      "heading": "Intellectual Property Rights",
-      "items": [
-        "All content on our Site, including text, images, graphics, and trademarks, is owned by Emonique or its licensors and is protected by intellectual property laws.",
-        "You may not copy, reproduce, distribute, or exploit any part of our Site or Services without our prior written consent.",
-        "Artists retain all copyrights to their artworks but grant Emonique the right to display and market their work."
+    {
+      "heading": "이용 자격",
+      "list": [
+        "이용자는 만 18세 이상이어야 하며, 법적 계약 체결 능력을 보유해야 합니다.",
+        "단체를 대표하여 서비스를 이용할 경우, 해당 단체를 법적으로 구속할 수 있는 권한이 있어야 합니다."
       ]
     },
-    "section_6": {
-      "heading": "Prohibited Activities",
-      "content": "We reserve the right to suspend or terminate accounts that violate these rules. You agree not to:",
-      "items": [
-        "Use our Site for any fraudulent, unlawful, or harmful purpose.",
-        "Interfere with or disrupt the functionality of our Services.",
-        "Post false, misleading, or infringing content.",
-        "Attempt to gain unauthorized access to our Site, servers, or data."
+    {
+      "heading": "계정 등록 및 보안",
+      "list": [
+        "일부 서비스는 계정 생성을 요구할 수 있으며, 이용자는 계정 정보를 정확히 입력하고 보안을 유지할 책임이 있습니다.",
+        "무단 접근이나 사용이 의심될 경우 즉시 당사에 알려야 합니다.",
+        "당사는 약관 위반 시 계정 정지 또는 삭제할 수 있습니다."
       ]
     },
-    "section_7": {
-      "heading": "Disclaimers & Limitation of Liability",
-      "sub_section_1": {
-        "heading": "Disclaimer of Warranties",
-        "items": [
-          "Our Services are provided «as is» and «as available» without any warranties, express or implied.",
-          "We do not guarantee uninterrupted or error-free operation of our Site.",
-          "We do not endorse or guarantee the quality or authenticity of any artwork sold through our platform."
-        ]
-      },
-      "sub_section_2": {
-        "heading": "Limitation of Liability",
-        "content": "In no event shall our total liability exceed the amount paid for the disputed transaction. To the maximum extent permitted by law, Emonique shall not be liable for:",
-        "items": [
-          "Indirect, incidental, or consequential damages.",
-          "Loss of data, revenue, or business opportunities.",
-          "Any issues arising from transactions between buyers and artists."
-        ]
-      }
-    },
-    "section_8": {
-      "heading": "Indemnification",
-      "content": "You agree to indemnify and hold harmless Emonique, its officers, directors, employees, and affiliates from any claims, damages, liabilities, or expenses arising from:",
-      "items": [
-        "Your use of our Site and Services.",
-        "Your violation of these Terms.",
-        "Any disputes between buyers and artists."
+    {
+      "heading": "거래 및 결제",
+      "sections": [
+        {
+          "heading": "구매자",
+          "list": [
+            "작품 구매 시, 표시된 가격 외에 배송비 및 세금이 추가로 부과될 수 있습니다.",
+            "결제 수단: 지정된 온라인 결제 수단 또는 당사가 명시한 계좌로의 송금.",
+            "결제 완료 후에만 주문이 확정되며, 그 이후에는 원칙적으로 취소가 불가합니다.",
+            "결제 지연 또는 미이행 시, 주문이 자동 취소되거나 예약이 무효 처리될 수 있습니다."
+          ]
+        },
+        {
+          "heading": "작가",
+          "list": [
+            "작품을 등록함으로써 당사에 전 세계 비독점적 전시 및 마케팅 권한을 부여합니다.",
+            "가격 및 설명은 정확하게 기재해야 하며, 주문 시 포장과 배송을 책임집니다.",
+            "판매 시, 당사가 명시한 수수료율에 따라 일정 금액이 공제됩니다."
+          ]
+        },
+        {
+          "heading": "배송 및 관세",
+          "list": [
+            "당사는 DHL, FedEx 등의 국제 물류업체와 협력하여 배송을 진행하며, 통관 문제는 구매자의 책임입니다.",
+            "당사는 운송 지연이나 세관 문제에 대해 책임지지 않습니다."
+          ]
+        },
+        {
+          "heading": "환불 및 반품",
+          "list": [
+            "원화 특성상 단순 변심에 의한 환불은 불가하며, 작품이 파손되었거나 설명과 현저히 다를 경우에 한해 환불을 요청할 수 있습니다.",
+            "환불 요청은 수령 후 48시간 이내에 접수해야 하며, 승인 후 영업일 기준 14일 이내에 환불이 진행됩니다."
+          ]
+        }
       ]
     },
-    "section_9": {
-      "heading": "Privacy Policy",
-      "content": "Our Privacy Policy governs how we collect, use, and protect your personal information. By using our Services, you acknowledge and agree to our data practices."
-    },
-    "section_10": {
-      "heading": "Dispute Resolution & Governing Law",
-      "sub_section_1": {
-        "heading": "Governing Law",
-        "content": "These Terms shall be governed by and construed in accordance with the laws of [Insert Jurisdiction, e.g., South Korea, UK, or the US], without regard to its conflict of laws principles."
-      },
-      "sub_section_2": {
-        "heading": "Dispute Resolution",
-        "items": [
-          "For EU/UK Users: Disputes may be resolved through the Online Dispute Resolution (ODR) Platform.",
-          "For US & International Users: Disputes shall be resolved through binding arbitration in [Insert Jurisdiction].",
-          "Exceptions: Either party may seek relief in a small claims court or for injunctive relief related to intellectual property."
-        ]
-      }
-    },
-    "section_11": {
-      "heading": "Termination",
-      "content": "Termination may be immediate and without prior notice. We reserve the right to suspend or terminate your access to our Services if you:",
-      "items": [
-        "Violate these Terms.",
-        "Engage in fraudulent or illegal activity.",
-        "Cause harm to our platform or users."
+    {
+      "heading": "지식재산권",
+      "list": [
+        "사이트 내 모든 콘텐츠(텍스트, 이미지, 디자인 등)는 회사 또는 해당 권리자의 자산이며, 저작권법의 보호를 받습니다.",
+        "작가는 저작권을 보유하되, 회사에 작품 홍보 및 판매를 위한 권한을 부여합니다.",
+        "이용자는 사전 서면 동의 없이 콘텐츠를 무단 복제, 배포, 2차적 이용할 수 없습니다."
       ]
     },
-    "section_12": {
-      "heading": "Changes to These Terms",
-      "content": "We may update these Terms periodically. The most recent version will be posted on our Site, and continued use of our Services constitutes acceptance of the updated Terms."
+    {
+      "heading": "금지 행위",
+      "paragraph": "이용자는 다음 행위를 하지 않기로 동의합니다:",
+      "list": [
+        "불법적이거나 사기적인 목적으로 사이트 이용.",
+        "서비스 운영 방해 행위.",
+        "허위 정보 제공 또는 타인의 권리 침해.",
+        "무단 접근, 해킹 시도 등 보안 침해 행위."
+      ]
     },
-    "section_13": {
-      "heading": "Contact Us",
-      "content": "If you have any questions about these Terms, please contact us at:",
-      "items": ["Email: contact@emonique.com"]
+    {
+      "heading": "면책조항 및 책임 제한",
+      "sections": [
+        {
+          "heading": "면책",
+          "list": [
+            "당사는 서비스 및 콘텐츠를 “있는 그대로”, “제공 가능한 상태로” 제공합니다.",
+            "작품의 품질, 진위성 등에 대해 명시적 또는 묵시적인 보증을 제공하지 않습니다."
+          ]
+        },
+        {
+          "heading": "책임의 제한",
+          "list": [
+            "당사는 법적 허용 범위 내에서 간접적, 우발적, 결과적 손해에 대해 책임을 지지 않습니다.",
+            "당사의 총 책임은 해당 거래와 관련하여 구매자가 지불한 금액을 초과하지 않습니다."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "면책 및 보상",
+      "paragraph": "이용자는 다음 사유로 인해 발생한 손해에 대해 회사와 그 임직원을 면책하고, 필요 시 보상할 책임이 있습니다:",
+      "list": ["약관 위반.", "타인 권리 침해.", "작가와 구매자 간 분쟁."]
+    },
+    {
+      "heading": "개인정보 보호",
+      "list": [
+        "회사는 별도의 개인정보처리방침에 따라 이용자의 개인정보를 수집, 이용, 보호합니다.",
+        "사이트 이용 시, 개인정보 수집·이용에 동의한 것으로 간주됩니다."
+      ]
+    },
+    {
+      "heading": "분쟁 해결 및 준거법",
+      "sections": [
+        {
+          "heading": "준거법",
+          "paragraph": "본 약관은 대한민국 법률을 기준으로 해석되며, 국제적 소비자 보호 규정은 예외적으로 적용됩니다."
+        },
+        {
+          "heading": "분쟁 해결",
+          "list": [
+            "EU/UK 사용자: 유럽연합 온라인 분쟁해결 플랫폼(ODR) 이용 가능.",
+            "기타 국가 사용자: 대한상사중재원(KCAB)의 규칙에 따라 서울에서 중재를 통해 해결.",
+            "예외: 지식재산권 또는 소액청구에 대해서는 별도 법원 또는 소액재판 가능."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "서비스 해지",
+      "paragraph": "다음 사유 발생 시, 회사는 사전 통보 없이 이용자의 서비스 이용을 제한하거나 해지할 수 있습니다:",
+      "list": [
+        "약관 위반.",
+        "사기, 해킹 등 불법 행위.",
+        "플랫폼 및 타 이용자에 대한 피해 유발."
+      ]
+    },
+    {
+      "heading": "약관 변경",
+      "paragraph": "당사는 사전 공지 후 약관을 변경할 수 있으며, 변경 후 서비스를 계속 이용하면 변경 약관에 동의한 것으로 간주합니다."
+    },
+    {
+      "heading": "불가항력",
+      "paragraph": "회사는 천재지변, 전쟁, 테러, 정부 조치, 전염병, 파업, 인터넷 장애 등 통제 불가능한 사유로 인한 서비스 중단에 대해 책임지지 않습니다."
+    },
+    {
+      "heading": "문의처",
+      "list": ["이메일: contact@emonique.com"]
     }
-  },
+  ],
   "privacy_policy": [
     {
       "paragraph": [
@@ -437,7 +447,7 @@
     {
       "heading": "문의처",
       "paragraph": "개인정보 관련 문의사항은 아래 연락처로 접수해 주세요.",
-      "list": ["이메일: privacy@emonique.com"]
+      "list": ["이메일: contact@emonique.com"]
     }
   ]
 }
