@@ -95,19 +95,31 @@
       "faq": [
         {
           "question": "Does price include tax and shipping expenses?",
-          "answer": "No, the listed price doesn’t include taxes or shipping costs. If you’re ordering from outside South Korea, you may need to pay import taxes, VAT, or customs fees, depending on your country’s regulations. These are the buyer’s responsibility. We’ll discuss shipping details with you personally and add the shipping cost to your invoice before confirming the order."
+          "answer": [
+            "No, the listed price <b>doesn’t include taxes or shipping costs</b>.",
+            "If you’re ordering from outside South Korea, you may need to pay import taxes, VAT, or customs fees, depending on your country’s regulations. These are the buyer’s responsibility. We’ll discuss shipping details with you personally and add the shipping cost to your invoice before confirming the order."
+          ]
         },
         {
           "question": "What payment methods do you accept?",
-          "answer": "Currently, we accept bank transfers only. Once your order is confirmed, we’ll provide our bank account details and issue an invoice for the total amount, including shipping (if applicable). Payment must be completed before we ship the artwork."
+          "answer": [
+            "Currently, we accept <b>bank transfers only</b>.",
+            "Once your order is confirmed, we’ll provide our bank account details and issue an invoice for the total amount, including shipping (if applicable). Payment must be completed before we ship the artwork."
+          ]
         },
         {
           "question": "Can I return or exchange an artwork?",
-          "answer": "As a general policy, we do not accept returns or exchanges for artworks, due to their unique and original nature. However, if your artwork arrives damaged and you believe it was caused by our handling or packaging, please contact us immediately with photos and details. If the issue is confirmed to be our fault, we will do our best to find a fair solution — whether it’s a refund, repair, or replacement (if possible)."
+          "answer": [
+            "As a general policy, we <b>do not accept returns or exchanges</b> for artworks, due to their unique and original nature.",
+            "However, if your artwork arrives damaged and you believe it was caused by our handling or packaging, please contact us immediately with photos and details. If the issue is confirmed to be our fault, we will do our best to find a fair solution — whether it’s a refund, repair, or replacement (if possible)."
+          ]
         },
         {
           "question": "Do you provide framing services?",
-          "answer": "Currently, we do not offer framing services. Any images showing the artwork in a frame are for illustration purposes only, to help you visualize how the piece might look when displayed. All artworks are shipped unframed, unless otherwise stated."
+          "answer": [
+            "Currently, we <b>do not offer framing services</b>.",
+            "Any images showing the artwork in a frame are for illustration purposes only, to help you visualize how the piece might look when displayed. All artworks are shipped unframed, unless otherwise stated."
+          ]
         }
       ]
     },
@@ -130,15 +142,24 @@
       "faq": [
         {
           "question": "What kind of artists do you work with?",
-          "answer": "We work with a diverse range of artists, including painters, sculptors, and photographers — with a focus on hand-crafted, original work. However, we only collaborate with artists who align with our vision: those who are passionate, authentic, and committed to sharing their art with a global audience. We carefully select each artist to ensure their work reflects the quality and creativity we stand for at Emonique."
+          "answer": [
+            "We work with a diverse range of artists, including <b>painters, sculptors, and photographers</b> — with a focus on hand-crafted, original work.",
+            "However, we only collaborate with artists who align with our vision: those who are passionate, authentic, and committed to sharing their art with a global audience. We carefully select each artist to ensure their work reflects the quality and creativity we stand for at Emonique."
+          ]
         },
         {
           "question": "Can I submit digital or mixed-media art?",
-          "answer": "At this time, we only accept physical artworks — such as paintings, drawings, sculptures, and other hand-crafted pieces. We focus on tangible, original art that can be exhibited and shipped to collectors around the world. Digital-only works or art intended solely for online display are not currently eligible."
+          "answer": [
+            "At this time, we <b>only accept physical artworks</b> — such as paintings, drawings, sculptures, and other hand-crafted pieces.",
+            "We focus on tangible, original art that can be exhibited and shipped to collectors around the world. Digital-only works or art intended solely for online display are not currently eligible."
+          ]
         },
         {
           "question": "Do you take a commission on sales?",
-          "answer": "Yes, we take a 20% commission on the sale price of each artwork. This helps cover our core services, including connecting artists with collectors and handling sales logistics. All other services — such as social media promotion, exhibition opportunities, and artist support — are provided free of charge. We’re here to help you grow without placing a financial burden on your creative process."
+          "answer": [
+            "Yes, we take a <b>20% commission</b> on the sale price of each artwork.",
+            "This helps cover our core services, including connecting artists with collectors and handling sales logistics. All other services — such as social media promotion, exhibition opportunities, and artist support — are provided free of charge. We’re here to help you grow without placing a financial burden on your creative process."
+          ]
         }
       ]
     }
