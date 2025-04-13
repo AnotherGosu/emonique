@@ -7,7 +7,7 @@ import { IMAGE_PLACEHOLDER } from "@/constants/common";
 
 import { cn } from "@/utils/cn";
 
-interface ArtworkLinkProps {
+interface CardProps {
   slug: string;
   image: string;
   name: string;
@@ -16,14 +16,14 @@ interface ArtworkLinkProps {
   className?: string;
 }
 
-export const ArtworkLink = ({
+export const Card = ({
   slug,
   image,
   name,
   artist,
   locale,
   className,
-}: ArtworkLinkProps) => {
+}: CardProps) => {
   return (
     <Link
       href={`/${locale}/gallery/${slug}`}

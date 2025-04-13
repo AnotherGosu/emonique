@@ -3,7 +3,8 @@ import { Locale } from "@/types/common";
 
 import { cn } from "@/utils/cn";
 
-import { ArtworkLink } from "@/components/ArtworkLink";
+import { Card } from "./Card";
+import { Fallback } from "./Fallback";
 
 interface ArtworkGridProps {
   artworks: ArtworkPreview[];
@@ -19,7 +20,7 @@ export const ArtworkGrid = ({ artworks, locale }: ArtworkGridProps) => {
         const isPortrait = preview.height > preview.width;
 
         return (
-          <ArtworkLink
+          <Card
             key={artwork.id}
             slug={artwork.slug}
             image={preview.url}
@@ -40,12 +41,9 @@ export const ArtworkGridFallback = () => {
   return (
     <Grid>
       {keys.map((key) => (
-        <div
+        <Fallback
           key={key}
-          className={cn(
-            "row-span-2 size-full animate-pulse bg-neutral-300 transition",
-            { "row-span-3": key % 4 === 0 },
-          )}
+          idx={key}
         />
       ))}
     </Grid>

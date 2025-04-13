@@ -3,7 +3,7 @@ import { Locale } from "@/types/common";
 import { Dict } from "@/utils/i18";
 
 export const IMAGE_PLACEHOLDER =
-  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO8Ug8AAi0BVVnWL7QAAAAASUVORK5CYII=";
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Wg8AAk8BZuQcWLwAAAAASUVORK5CYII=";
 
 export const LOCALES: Locale[] = ["en", "ko"];
 
