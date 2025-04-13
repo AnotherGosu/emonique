@@ -18,6 +18,8 @@ import { Heading, Paragraph, RichText, Section } from "@/components/Typography";
 import { Artist } from "./_components/Artist";
 import { Artworks } from "./_components/Artworks";
 
+export const revalidate = 0;
+
 export async function generateStaticParams() {
   const { artists } = await getArtistSlugs();
 

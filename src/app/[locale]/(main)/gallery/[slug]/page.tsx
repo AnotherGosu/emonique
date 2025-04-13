@@ -19,6 +19,8 @@ import { Carousel } from "./_components/Carousel";
 import { Info } from "./_components/Info";
 import { SimilarArtworks } from "./_components/SimilarArtworks";
 
+export const revalidate = 0;
+
 export async function generateStaticParams() {
   const { artworks } = await getArtworkSlugs();
 
