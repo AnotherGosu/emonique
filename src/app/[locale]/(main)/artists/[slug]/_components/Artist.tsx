@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { PropsWithDict } from "@/types/common";
 
-import { IMAGE_BLUR } from "@/constants/common";
+import { IMAGE_PLACEHOLDER } from "@/constants/common";
 
 import { cn } from "@/utils/cn";
 
@@ -32,7 +32,7 @@ export const Artist = ({
         width={photo.width}
         height={photo.height}
         priority
-        blurDataURL={IMAGE_BLUR}
+        placeholder={IMAGE_PLACEHOLDER}
         className="rounded-xs"
       />
 

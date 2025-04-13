@@ -7,7 +7,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
-import { IMAGE_BLUR } from "@/constants/common";
+import { IMAGE_PLACEHOLDER } from "@/constants/common";
 
 import { CarouselButton } from "./CarouselButton";
 import { CarouselDot } from "./CarouselDot";
@@ -49,7 +49,7 @@ export const Carousel = ({ images }: CarouselProps) => {
                 height={image.height}
                 alt=""
                 priority
-                blurDataURL={IMAGE_BLUR}
+                placeholder={IMAGE_PLACEHOLDER}
                 className="h-100 w-full rounded-xs object-contain"
               />
             </div>

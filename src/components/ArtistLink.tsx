@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Locale } from "@/types/common";
 
-import { IMAGE_BLUR } from "@/constants/common";
+import { IMAGE_PLACEHOLDER } from "@/constants/common";
 
 import { cn } from "@/utils/cn";
 
@@ -39,7 +39,7 @@ export const ArtistLink = ({
           src={photo}
           alt=""
           fill
-          blurDataURL={IMAGE_BLUR}
+          placeholder={IMAGE_PLACEHOLDER}
           sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
           className="rounded-xs object-cover"
         />

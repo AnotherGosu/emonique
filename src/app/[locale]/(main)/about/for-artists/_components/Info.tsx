@@ -24,6 +24,7 @@ export const Info = ({ dict }: PropsWithDict) => {
           alt=""
           width={350}
           className="rounded-xs"
+          priority
         />
       </div>
     </Section>
