@@ -12,7 +12,6 @@ import { getDictionary } from "@/utils/i18";
 
 import { ArtworkGridFallback } from "@/components/ArtworkGrid";
 import { ContactForm } from "@/components/ContactForm";
-import { HeroSection } from "@/components/HeroSection";
 import { Heading, Paragraph, RichText, Section } from "@/components/Typography";
 
 import { Carousel } from "./_components/Carousel";
@@ -56,59 +55,53 @@ export default async function Page(props: PageProps) {
 
   return (
     <>
-      <HeroSection heading={dict["headings"]["artwork"]} />
+      <Section className={cn("grid grid-cols-1 gap-20", "md:grid-cols-2")}>
+        <Carousel images={artwork.images} />
 
-      <div className="flex flex-col gap-20 py-20">
-        <Section className={cn("grid grid-cols-1 gap-20", "md:grid-cols-2")}>
-          <Carousel images={artwork.images} />
+        <Info
+          name={artwork.name}
+          artist={artwork.artist}
+          dimensions={artwork.dimensions}
+          medium={artwork.medium}
+          yearOfCreation={artwork.yearOfCreation}
+          price={artwork.price}
+          locale={locale}
+          dict={dict}
+        />
+      </Section>
 
-          <Info
-            name={artwork.name}
-            artist={artwork.artist}
-            dimensions={artwork.dimensions}
-            medium={artwork.medium}
-            yearOfCreation={artwork.yearOfCreation}
-            price={artwork.price}
+      <Section>
+        <Heading className="mb-6">{dict["headings"]["about_artwork"]}</Heading>
+
+        <RichText raw={artwork.description.raw} />
+      </Section>
+
+      <Section className={cn("grid gap-x-20 gap-y-8", "md:grid-cols-2")}>
+        <div>
+          <Heading className="mb-6">{dict["headings"]["inquire"]}</Heading>
+
+          <Paragraph>{dict["contact"]["artwork"]}</Paragraph>
+        </div>
+
+        <ContactForm
+          dict={dict}
+          context={{ artworkSlug: artwork.slug }}
+        />
+      </Section>
+
+      <Section>
+        <Heading className="mb-6">
+          {dict["headings"]["similar_artworks"]}
+        </Heading>
+
+        <Suspense fallback={<ArtworkGridFallback />}>
+          <SimilarArtworks
             locale={locale}
-            dict={dict}
+            slug={artwork.slug}
+            artistSlug={artwork.artist.slug}
           />
-        </Section>
-
-        <Section>
-          <Heading className="mb-6">
-            {dict["headings"]["about_artwork"]}
-          </Heading>
-
-          <RichText raw={artwork.description.raw} />
-        </Section>
-
-        <Section className={cn("grid gap-x-20 gap-y-8", "md:grid-cols-2")}>
-          <div>
-            <Heading className="mb-6">{dict["headings"]["inquire"]}</Heading>
-
-            <Paragraph>{dict["contact"]["artwork"]}</Paragraph>
-          </div>
-
-          <ContactForm
-            dict={dict}
-            context={{ artworkSlug: artwork.slug }}
-          />
-        </Section>
-
-        <Section>
-          <Heading className="mb-6">
-            {dict["headings"]["similar_artworks"]}
-          </Heading>
-
-          <Suspense fallback={<ArtworkGridFallback />}>
-            <SimilarArtworks
-              locale={locale}
-              slug={artwork.slug}
-              artistSlug={artwork.artist.slug}
-            />
-          </Suspense>
-        </Section>
-      </div>
+        </Suspense>
+      </Section>
     </>
   );
 }

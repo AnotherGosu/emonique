@@ -17,6 +17,22 @@ export const NAVIGATION: Array<{
   { title: "about_us", href: "/about" },
 ];
 
+export const ROUTES: Array<{
+  key: keyof Dict["headings"];
+  path: RegExp;
+}> = [
+  { key: "gallery", path: /^gallery$/ },
+  { key: "artwork", path: /^gallery\/[a-z0-9-]+$/i },
+  { key: "artists", path: /^artists$/ },
+  { key: "artist", path: /^artists\/[a-z0-9-]+$/i },
+  { key: "blog", path: /^blog$/ },
+  { key: "about_us", path: /^about$/ },
+  { key: "for_collectors", path: /^about\/for-collectors$/ },
+  { key: "for_artists", path: /^about\/for-artists$/ },
+  { key: "privacy_policy", path: /^privacy-policy$/ },
+  { key: "terms_of_service", path: /^terms-of-service$/ },
+];
+
 export const CONTACTS = {
   email: "contact@emonique.com",
 };

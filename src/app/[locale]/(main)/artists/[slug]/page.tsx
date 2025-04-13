@@ -12,7 +12,6 @@ import { getDictionary } from "@/utils/i18";
 
 import { ArtworkGridFallback } from "@/components/ArtworkGrid";
 import { ContactForm } from "@/components/ContactForm";
-import { HeroSection } from "@/components/HeroSection";
 import { Heading, Paragraph, RichText, Section } from "@/components/Typography";
 
 import { Artist } from "./_components/Artist";
@@ -55,47 +54,43 @@ export default async function Page(props: PageProps) {
 
   return (
     <>
-      <HeroSection heading={dict["headings"]["artist"]} />
+      <Artist
+        name={artist.name}
+        quote={artist.quote}
+        highlights={artist.highlights}
+        photo={artist.photo}
+        dict={dict}
+      />
 
-      <div className="flex flex-col gap-20 py-20">
-        <Artist
-          name={artist.name}
-          quote={artist.quote}
-          highlights={artist.highlights}
-          photo={artist.photo}
+      <Section>
+        <Heading className="mb-6">{dict["headings"]["about_artist"]}</Heading>
+
+        <RichText raw={artist.biography.raw} />
+      </Section>
+
+      <Section className={cn("grid gap-x-20 gap-y-8", "md:grid-cols-2")}>
+        <div>
+          <Heading className="mb-6">{dict["headings"]["inquire"]}</Heading>
+
+          <Paragraph>{dict["contact"]["artist"]}</Paragraph>
+        </div>
+
+        <ContactForm
           dict={dict}
+          context={{ artistSlug: artist.slug }}
         />
+      </Section>
 
-        <Section>
-          <Heading className="mb-6">{dict["headings"]["about_artist"]}</Heading>
+      <Section>
+        <Heading className="mb-6">{dict["headings"]["artworks"]}</Heading>
 
-          <RichText raw={artist.biography.raw} />
-        </Section>
-
-        <Section className={cn("grid gap-x-20 gap-y-8", "md:grid-cols-2")}>
-          <div>
-            <Heading className="mb-6">{dict["headings"]["inquire"]}</Heading>
-
-            <Paragraph>{dict["contact"]["artist"]}</Paragraph>
-          </div>
-
-          <ContactForm
-            dict={dict}
-            context={{ artistSlug: artist.slug }}
+        <Suspense fallback={<ArtworkGridFallback />}>
+          <Artworks
+            locale={locale}
+            slug={artist.slug}
           />
-        </Section>
-
-        <Section>
-          <Heading className="mb-6">{dict["headings"]["artworks"]}</Heading>
-
-          <Suspense fallback={<ArtworkGridFallback />}>
-            <Artworks
-              locale={locale}
-              slug={artist.slug}
-            />
-          </Suspense>
-        </Section>
-      </div>
+        </Suspense>
+      </Section>
     </>
   );
 }

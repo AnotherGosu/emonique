@@ -4,8 +4,6 @@ import { Locale } from "@/types/common";
 
 import { getDictionary } from "@/utils/i18";
 
-import { HeroSection } from "@/components/HeroSection";
-
 import { Clients } from "./_components/Clients";
 import { Contact } from "./_components/Contact";
 import { Info } from "./_components/Info";
@@ -32,13 +30,9 @@ export default async function Page(props: PageProps) {
 
   return (
     <>
-      <HeroSection heading={dict["headings"]["about_us"]} />
-
-      <div className="my-20 flex flex-col gap-20">
-        <Info dict={dict} />
-        <Clients dict={dict} />
-        <Contact dict={dict} />
-      </div>
+      <Info dict={dict} />
+      <Clients dict={dict} />
+      <Contact dict={dict} />
     </>
   );
 }

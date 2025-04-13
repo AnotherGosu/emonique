@@ -4,7 +4,6 @@ import { Locale } from "@/types/common";
 
 import { getDictionary } from "@/utils/i18";
 
-import { HeroSection } from "@/components/HeroSection";
 import { Markup } from "@/components/Markup";
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
@@ -31,17 +30,13 @@ export default async function Page(props: PageProps) {
 
   return (
     <>
-      <HeroSection heading={dict["headings"]["terms_of_service"]} />
-
-      <div className="my-20 flex flex-col gap-20">
-        {sections.map((section, idx) => (
-          <Markup
-            key={idx}
-            idx={String(idx)}
-            {...section}
-          />
-        ))}
-      </div>
+      {sections.map((section, idx) => (
+        <Markup
+          key={idx}
+          idx={String(idx)}
+          {...section}
+        />
+      ))}
     </>
   );
 }

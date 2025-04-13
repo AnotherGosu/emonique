@@ -4,8 +4,6 @@ import { Locale } from "@/types/common";
 
 import { getDictionary } from "@/utils/i18";
 
-import { HeroSection } from "@/components/HeroSection";
-
 import { FAQ } from "./_components/FAQ";
 import { Info } from "./_components/Info";
 
@@ -31,12 +29,8 @@ export default async function Page(props: PageProps) {
 
   return (
     <>
-      <HeroSection heading={dict["headings"]["for_collectors"]} />
-
-      <div className="my-20 flex flex-col gap-20">
-        <Info dict={dict} />
-        <FAQ dict={dict} />
-      </div>
+      <Info dict={dict} />
+      <FAQ dict={dict} />
     </>
   );
 }
