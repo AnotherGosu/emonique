@@ -1,33 +1,51 @@
 import { gql } from "graphql-request";
 
 import { ArtistPreview } from "@/types/artist";
-import { Locale } from "@/types/common";
+import { Locale, PaginationResponse, SearchParams } from "@/types/common";
 
 import { fetcher } from "@/utils/fetcher";
 
-export const getArtists = ({
+export const getArtists = async ({
   locale,
-  first = 10,
-  skip = 0,
+  searchParams = {},
 }: {
   locale: Locale;
-  first?: number;
-  skip?: number;
+  searchParams?: SearchParams;
 }) => {
-  return fetcher<{ artists: ArtistPreview[] }>(query, { locale, first, skip });
+  const first = 9;
+  const page = Number(searchParams.page || 1);
+  const skip = first * (page - 1);
+
+  const data = await fetcher<{
+    artistsConnection: PaginationResponse<ArtistPreview>;
+  }>(query, { locale, first, skip });
+
+  const { edges, pageInfo } = data.artistsConnection;
+
+  const artists = edges.map(({ node }) => node);
+
+  return { artists, pageInfo };
 };
 
 const query = gql`
   query GetArtists($locale: Locale!, $first: Int!, $skip: Int!) {
-    artists(locales: [$locale], first: $first, skip: $skip) {
-      id
-      slug
-      name
-      quote
-      photo(locales: [en]) {
-        url
-        width
-        height
+    artistsConnection(locales: [$locale], first: $first, skip: $skip) {
+      edges {
+        node {
+          id
+          slug
+          name
+          quote
+          photo(locales: [en]) {
+            url
+            width
+            height
+          }
+        }
+      }
+      pageInfo {
+        hasNextPage
+        hasPreviousPage
       }
     }
   }

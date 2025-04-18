@@ -21,15 +21,15 @@ import { SimilarArtworks } from "./_components/SimilarArtworks";
 export const revalidate = 0;
 
 export async function generateStaticParams() {
-  const { artworks } = await getArtworkSlugs();
+  const slugs = await getArtworkSlugs();
 
-  return artworks.map(({ slug }) => ({ slug }));
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { locale, slug } = await props.params;
 
-  const { artwork } = await getArtwork({ slug, locale });
+  const artwork = await getArtwork({ slug, locale });
 
   if (!artwork) notFound();
 
@@ -49,7 +49,7 @@ export default async function Page(props: PageProps) {
 
   const dict = await getDictionary(locale);
 
-  const { artwork } = await getArtwork({ slug, locale });
+  const artwork = await getArtwork({ slug, locale });
 
   if (!artwork) return notFound();
 

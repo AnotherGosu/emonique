@@ -5,12 +5,17 @@ import { Locale } from "@/types/common";
 
 import { fetcher } from "@/utils/fetcher";
 
-export const getSimilarArtworks = (variables: {
+export const getSimilarArtworks = async (variables: {
   locale: Locale;
   slug: string;
   artistSlug: string;
 }) => {
-  return fetcher<{ artworks: ArtworkPreview[] }>(query, variables);
+  const { artworks } = await fetcher<{ artworks: ArtworkPreview[] }>(
+    query,
+    variables,
+  );
+
+  return artworks;
 };
 
 const query = gql`

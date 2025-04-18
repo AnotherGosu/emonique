@@ -2,8 +2,14 @@ import { gql } from "graphql-request";
 
 import { fetcher } from "@/utils/fetcher";
 
-export const getArtistSlugs = () => {
-  return fetcher<{ artists: Array<{ slug: string }> }>(query);
+export const getArtistSlugs = async () => {
+  const { artists } = await fetcher<{ artists: Array<{ slug: string }> }>(
+    query,
+  );
+
+  const slugs = artists.map(({ slug }) => slug);
+
+  return slugs;
 };
 
 const query = gql`

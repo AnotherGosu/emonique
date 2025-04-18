@@ -5,8 +5,13 @@ import { Locale } from "@/types/common";
 
 import { fetcher } from "@/utils/fetcher";
 
-export const getArtist = (variables: { slug: string; locale: Locale }) => {
-  return fetcher<{ artist: Artist | null }>(query, variables);
+export const getArtist = async (variables: {
+  slug: string;
+  locale: Locale;
+}) => {
+  const { artist } = await fetcher<{ artist: Artist | null }>(query, variables);
+
+  return artist;
 };
 
 const query = gql`

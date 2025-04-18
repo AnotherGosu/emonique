@@ -1,40 +1,54 @@
 import { gql } from "graphql-request";
 
 import { ArtworkPreview } from "@/types/artwork";
-import { Locale } from "@/types/common";
+import { Locale, PaginationResponse, SearchParams } from "@/types/common";
 
 import { fetcher } from "@/utils/fetcher";
 
-export const getArtworks = ({
+export const getArtworks = async ({
   locale,
-  first = 30,
-  skip = 0,
+  searchParams = {},
 }: {
   locale: Locale;
-  first?: number;
-  skip?: number;
+  searchParams?: SearchParams;
 }) => {
-  return fetcher<{ artworks: ArtworkPreview[] }>(query, {
-    locale,
-    first,
-    skip,
-  });
+  const first = 18;
+  const page = Number(searchParams.page || 1);
+  const skip = first * (page - 1);
+
+  const data = await fetcher<{
+    artworksConnection: PaginationResponse<ArtworkPreview>;
+  }>(query, { locale, first, skip });
+
+  const { edges, pageInfo } = data.artworksConnection;
+
+  const artworks = edges.map(({ node }) => node);
+
+  return { artworks, pageInfo };
 };
 
 const query = gql`
   query GetArtworks($locale: Locale!, $first: Int!, $skip: Int!) {
-    artworks(locales: [$locale], first: $first, skip: $skip) {
-      id
-      slug
-      name
-      images(locales: [en]) {
-        url
-        width
-        height
+    artworksConnection(locales: [$locale], first: $first, skip: $skip) {
+      edges {
+        node {
+          id
+          slug
+          name
+          images(locales: [en]) {
+            url
+            width
+            height
+          }
+          artist {
+            name
+            slug
+          }
+        }
       }
-      artist {
-        name
-        slug
+      pageInfo {
+        hasNextPage
+        hasPreviousPage
       }
     }
   }

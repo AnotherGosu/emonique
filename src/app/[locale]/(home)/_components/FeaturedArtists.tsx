@@ -1,6 +1,6 @@
 import { Locale } from "@/types/common";
 
-import { getArtists } from "@/api/getArtists";
+import { getFeaturedArtists } from "@/api/getFeaturedArtists";
 
 import { ArtistGrid } from "@/components/ArtistGrid";
 
@@ -9,7 +9,7 @@ interface FeaturedArtistsProps {
 }
 
 export const FeaturedArtists = async ({ locale }: FeaturedArtistsProps) => {
-  const { artists } = await getArtists({ locale, first: 3 });
+  const artists = await getFeaturedArtists(locale);
 
   return (
     <ArtistGrid

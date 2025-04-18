@@ -20,15 +20,15 @@ import { Artworks } from "./_components/Artworks";
 export const revalidate = 0;
 
 export async function generateStaticParams() {
-  const { artists } = await getArtistSlugs();
+  const slugs = await getArtistSlugs();
 
-  return artists.map(({ slug }) => ({ slug }));
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { locale, slug } = await props.params;
 
-  const { artist } = await getArtist({ slug, locale });
+  const artist = await getArtist({ slug, locale });
 
   if (!artist) notFound();
 
@@ -48,7 +48,7 @@ export default async function Page(props: PageProps) {
 
   const dict = await getDictionary(locale);
 
-  const { artist } = await getArtist({ slug, locale });
+  const artist = await getArtist({ slug, locale });
 
   if (!artist) notFound();
 
