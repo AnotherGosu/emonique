@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 import { Suspense } from "react";
 
-import { Locale } from "@/types/common";
+import { Locale, SearchParams } from "@/types/common";
 
 import { getDictionary } from "@/utils/i18";
 
+import { createQueryString } from "@/lib/createQueryString";
+
 import { ArtistGridFallback } from "@/components/ArtistGrid";
-import { HeroSection } from "@/components/HeroSection";
 import { Section } from "@/components/Typography";
 
 import { Artists } from "./_components/Artists";
@@ -24,24 +25,28 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;
+  searchParams: Promise<SearchParams>;
 }
 
 export default async function Page(props: PageProps) {
-  const { locale } = await props.params;
-
-  const dict = await getDictionary(locale);
+  const [params, searchParams] = await Promise.all([
+    props.params,
+    props.searchParams,
+  ]);
 
   return (
     <>
-      <HeroSection heading={dict["headings"]["artists"]} />
-
-      <div className="flex flex-col gap-20 py-20">
-        <Section>
-          <Suspense fallback={<ArtistGridFallback />}>
-            <Artists locale={locale} />
-          </Suspense>
-        </Section>
-      </div>
+      <Section>
+        <Suspense
+          key={createQueryString(searchParams)}
+          fallback={<ArtistGridFallback />}
+        >
+          <Artists
+            locale={params.locale}
+            searchParams={searchParams}
+          />
+        </Suspense>
+      </Section>
     </>
   );
 }

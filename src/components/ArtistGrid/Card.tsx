@@ -3,11 +3,11 @@ import Link from "next/link";
 
 import { Locale } from "@/types/common";
 
-import { IMAGE_BLUR } from "@/constants/common";
+import { IMAGE_PLACEHOLDER } from "@/constants/common";
 
 import { cn } from "@/utils/cn";
 
-interface ArtistLinkProps {
+interface CardProps {
   slug: string;
   name: string;
   photo: string;
@@ -15,13 +15,7 @@ interface ArtistLinkProps {
   locale: Locale;
 }
 
-export const ArtistLink = ({
-  slug,
-  name,
-  photo,
-  quote,
-  locale,
-}: ArtistLinkProps) => {
+export const Card = ({ slug, name, photo, quote, locale }: CardProps) => {
   return (
     <Link
       href={`/${locale}/artists/${slug}`}
@@ -39,7 +33,7 @@ export const ArtistLink = ({
           src={photo}
           alt=""
           fill
-          blurDataURL={IMAGE_BLUR}
+          placeholder={IMAGE_PLACEHOLDER}
           sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
           className="rounded-xs object-cover"
         />

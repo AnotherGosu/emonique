@@ -3,7 +3,8 @@ import { Locale } from "@/types/common";
 
 import { cn } from "@/utils/cn";
 
-import { ArtistLink } from "@/components/ArtistLink";
+import { Card } from "./Card";
+import { Fallback } from "./Fallback";
 
 interface ArtistGridProps {
   artists: ArtistPreview[];
@@ -14,7 +15,7 @@ export const ArtistGrid = ({ artists, locale }: ArtistGridProps) => {
   return (
     <Grid>
       {artists.map((artist) => (
-        <ArtistLink
+        <Card
           key={artist.id}
           slug={artist.slug}
           name={artist.name}
@@ -33,10 +34,7 @@ export const ArtistGridFallback = () => {
   return (
     <Grid>
       {keys.map((key) => (
-        <div
-          key={key}
-          className="size-full animate-pulse bg-neutral-300 transition"
-        />
+        <Fallback key={key} />
       ))}
     </Grid>
   );

@@ -75,6 +75,7 @@ export default async function RootLayout({
         className={cn(
           "bg-neutral-50 text-neutral-900 antialiased",
           `${fontHeading.variable} ${fontText.variable}`,
+          { "break-keep": locale === "ko" },
         )}
       >
         <div className="grid min-h-svh grid-rows-[1fr_max-content]">

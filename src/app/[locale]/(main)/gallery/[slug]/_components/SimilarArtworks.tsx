@@ -15,7 +15,7 @@ export const SimilarArtworks = async ({
   slug,
   artistSlug,
 }: SimilarArtworksProps) => {
-  const { artworks } = await getSimilarArtworks({ locale, slug, artistSlug });
+  const artworks = await getSimilarArtworks({ locale, slug, artistSlug });
 
   return (
     <ArtworkGrid

@@ -10,7 +10,7 @@ interface ArtworksProps {
 }
 
 export const Artworks = async ({ locale, slug }: ArtworksProps) => {
-  const { artworks } = await getArtistArtworks({ locale, slug });
+  const artworks = await getArtistArtworks({ locale, slug });
 
   return (
     <ArtworkGrid

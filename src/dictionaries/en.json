@@ -95,19 +95,31 @@
       "faq": [
         {
           "question": "Does price include tax and shipping expenses?",
-          "answer": "No, the listed price doesn’t include taxes or shipping costs. If you’re ordering from outside South Korea, you may need to pay import taxes, VAT, or customs fees, depending on your country’s regulations. These are the buyer’s responsibility. We’ll discuss shipping details with you personally and add the shipping cost to your invoice before confirming the order."
+          "answer": [
+            "No, the listed price <b>doesn’t include taxes or shipping costs</b>.",
+            "If you’re ordering from outside South Korea, you may need to pay import taxes, VAT, or customs fees, depending on your country’s regulations. These are the buyer’s responsibility. We’ll discuss shipping details with you personally and add the shipping cost to your invoice before confirming the order."
+          ]
         },
         {
           "question": "What payment methods do you accept?",
-          "answer": "Currently, we accept bank transfers only. Once your order is confirmed, we’ll provide our bank account details and issue an invoice for the total amount, including shipping (if applicable). Payment must be completed before we ship the artwork."
+          "answer": [
+            "Currently, we accept <b>bank transfers only</b>.",
+            "Once your order is confirmed, we’ll provide our bank account details and issue an invoice for the total amount, including shipping (if applicable). Payment must be completed before we ship the artwork."
+          ]
         },
         {
           "question": "Can I return or exchange an artwork?",
-          "answer": "As a general policy, we do not accept returns or exchanges for artworks, due to their unique and original nature. However, if your artwork arrives damaged and you believe it was caused by our handling or packaging, please contact us immediately with photos and details. If the issue is confirmed to be our fault, we will do our best to find a fair solution — whether it’s a refund, repair, or replacement (if possible)."
+          "answer": [
+            "As a general policy, we <b>do not accept returns or exchanges</b> for artworks, due to their unique and original nature.",
+            "However, if your artwork arrives damaged and you believe it was caused by our handling or packaging, please contact us immediately with photos and details. If the issue is confirmed to be our fault, we will do our best to find a fair solution — whether it’s a refund, repair, or replacement (if possible)."
+          ]
         },
         {
           "question": "Do you provide framing services?",
-          "answer": "Currently, we do not offer framing services. Any images showing the artwork in a frame are for illustration purposes only, to help you visualize how the piece might look when displayed. All artworks are shipped unframed, unless otherwise stated."
+          "answer": [
+            "Currently, we <b>do not offer framing services</b>.",
+            "Any images showing the artwork in a frame are for illustration purposes only, to help you visualize how the piece might look when displayed. All artworks are shipped unframed, unless otherwise stated."
+          ]
         }
       ]
     },
@@ -130,15 +142,24 @@
       "faq": [
         {
           "question": "What kind of artists do you work with?",
-          "answer": "We work with a diverse range of artists, including painters, sculptors, and photographers — with a focus on hand-crafted, original work. However, we only collaborate with artists who align with our vision: those who are passionate, authentic, and committed to sharing their art with a global audience. We carefully select each artist to ensure their work reflects the quality and creativity we stand for at Emonique."
+          "answer": [
+            "We work with a diverse range of artists, including <b>painters, sculptors, and photographers</b> — with a focus on hand-crafted, original work.",
+            "However, we only collaborate with artists who align with our vision: those who are passionate, authentic, and committed to sharing their art with a global audience. We carefully select each artist to ensure their work reflects the quality and creativity we stand for at Emonique."
+          ]
         },
         {
           "question": "Can I submit digital or mixed-media art?",
-          "answer": "At this time, we only accept physical artworks — such as paintings, drawings, sculptures, and other hand-crafted pieces. We focus on tangible, original art that can be exhibited and shipped to collectors around the world. Digital-only works or art intended solely for online display are not currently eligible."
+          "answer": [
+            "At this time, we <b>only accept physical artworks</b> — such as paintings, drawings, sculptures, and other hand-crafted pieces.",
+            "We focus on tangible, original art that can be exhibited and shipped to collectors around the world. Digital-only works or art intended solely for online display are not currently eligible."
+          ]
         },
         {
           "question": "Do you take a commission on sales?",
-          "answer": "Yes, we take a 20% commission on the sale price of each artwork. This helps cover our core services, including connecting artists with collectors and handling sales logistics. All other services — such as social media promotion, exhibition opportunities, and artist support — are provided free of charge. We’re here to help you grow without placing a financial burden on your creative process."
+          "answer": [
+            "Yes, we take a <b>20% commission</b> on the sale price of each artwork.",
+            "This helps cover our core services, including connecting artists with collectors and handling sales logistics. All other services — such as social media promotion, exhibition opportunities, and artist support — are provided free of charge. We’re here to help you grow without placing a financial burden on your creative process."
+          ]
         }
       ]
     }
@@ -173,151 +194,171 @@
       "artist submissions"
     ]
   },
-  "terms_of_service": {
-    "intro": "Welcome to Emonique («Company», «we», «us», or «our»). These Terms of Service («Terms») govern your use of our website [www.emonique.com] (the «Site») and our services, including the purchase and sale of original artworks («Services»). By accessing or using our Services, you agree to be bound by these Terms. If you do not agree, please do not use our Services.",
-    "section_1": {
-      "heading": "1. Definitions",
-      "items": [
+  "terms_of_service": [
+    {
+      "paragraph": [
+        "Welcome to Emonique («Company», «we», «us», or «our»). These Terms of Service («Terms») govern your use of our website (the «Site») and our services, including the purchase and sale of original artworks («Services»).",
+        "By accessing or using our Services, you agree to be bound by these Terms. If you do not agree, please do not use our Services."
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "list": [
         "«User» («you») refers to anyone who accesses or uses the Site, including buyers, artists, and visitors.",
         "«Artist» refers to any individual or entity selling artwork through our platform.",
-        "«Buyer» refers to any individual or entity purchasing artwork through our platform.",
+        "«Buyer» («Collector») refers to any individual or entity purchasing artwork through our platform.",
         "«Artwork» refers to original visual art pieces made available for sale."
       ]
     },
-    "section_2": {
-      "heading": "2. Eligibility",
-      "content": "You must be at least 18 years old to use our Services. By using our Site, you represent that you are legally capable of entering into a binding agreement. If you are using our Services on behalf of an entity, you warrant that you have the authority to bind that entity to these Terms."
+    {
+      "heading": "Eligibility",
+      "paragraph": "You must be at least 18 years old to use our Services. By using our Site, you represent that you are legally capable of entering into a binding agreement. If you are using our Services on behalf of an entity, you warrant that you have the authority to bind that entity to these Terms."
     },
-    "section_3": {
-      "heading": "3. Account Registration & Security",
-      "items": [
+    {
+      "heading": "Account Registration & Security",
+      "list": [
         "You may need to create an account to access certain Services.",
         "You are responsible for maintaining the confidentiality of your account and password.",
         "You must notify us immediately of any unauthorized access or use of your account.",
         "We reserve the right to suspend or terminate accounts that violate these Terms."
       ]
     },
-    "section_4": {
-      "heading": "4. Sales & Transactions",
-      "sub_section_1": {
-        "heading": "4.1. For Buyers",
-        "items": [
-          "When you purchase artwork, you agree to pay the listed price plus applicable taxes and shipping fees.",
-          "All payments must be made via our designated payment processors (e.g., PayPal, Stripe).",
-          "Once an order is placed, it is binding and cannot be canceled unless permitted by these Terms."
-        ]
-      },
-      "sub_section_2": {
-        "heading": "4.2. For Artists",
-        "items": [
-          "By listing artwork on our platform, you grant us a non-exclusive, worldwide license to display and promote your artwork.",
-          "You must provide accurate descriptions and pricing for your artwork.",
-          "Artists are responsible for fulfilling orders and ensuring safe and timely delivery.",
-          "We may deduct a commission from the sale price as outlined in our fee policy."
-        ]
-      },
-      "sub_section_3": {
-        "heading": "4.3. Shipping & Delivery",
-        "items": [
-          "We facilitate shipping through third-party logistics providers (e.g., DHL, FedEx).",
-          "Buyers are responsible for any customs duties or import taxes.",
-          "Emonique is not liable for delays caused by shipping carriers or customs authorities."
-        ]
-      },
-      "sub_section_4": {
-        "heading": "4.4. Returns & Refunds",
-        "items": [
-          "Due to the nature of original artworks, all sales are final unless the artwork arrives damaged or significantly differs from its description.",
-          "Buyers must notify us of any issues within 48 hours of delivery to request a refund.",
-          "Refunds, if approved, will be issued within 14 business days via the original payment method."
-        ]
-      }
+    {
+      "heading": "Sales & Transactions",
+      "sections": [
+        {
+          "heading": "For Buyers",
+          "list": [
+            "When you purchase artwork, you agree to pay the listed price plus applicable taxes and shipping fees.",
+            "Payment shall be made in full using one of the following accepted methods: (i) designated online payment processors or (ii) direct bank transfer to an account specified by us.",
+            "Once an order is placed, it is binding and cannot be canceled unless permitted by these Terms.",
+            "All payments must be completed in accordance with the timelines and instructions provided at checkout. Orders will not be processed or shipped until full payment has been received and cleared.",
+            "The Collector acknowledges and agrees that failure to remit payment in accordance with the above may result in cancellation of the order and/or forfeiture of reservation of the artwork."
+          ]
+        },
+        {
+          "heading": "For Artists",
+          "list": [
+            "By listing artwork on our platform, you grant us a non-exclusive, worldwide license to display and promote your artwork.",
+            "You must provide accurate descriptions and pricing for your artwork.",
+            "Artists are responsible for fulfilling orders and ensuring safe and timely delivery.",
+            "We may deduct a commission from the sale price as outlined in our fee policy."
+          ]
+        },
+        {
+          "heading": "Shipping & Delivery",
+          "list": [
+            "We facilitate shipping through third-party logistics providers (e.g., DHL, FedEx).",
+            "Buyers are responsible for any customs duties or import taxes.",
+            "Emonique is not liable for delays caused by shipping carriers or customs authorities."
+          ]
+        },
+        {
+          "heading": "Returns & Refunds",
+          "list": [
+            "Due to the nature of original artworks, all sales are final unless the artwork arrives damaged or significantly differs from its description.",
+            "Buyers must notify us of any issues within 48 hours of delivery to request a refund.",
+            "Refunds, if approved, will be issued within 14 business days via the original payment method."
+          ]
+        }
+      ]
     },
-    "section_5": {
-      "heading": "5. Intellectual Property Rights",
-      "items": [
+    {
+      "heading": "Intellectual Property Rights",
+      "list": [
         "All content on our Site, including text, images, graphics, and trademarks, is owned by Emonique or its licensors and is protected by intellectual property laws.",
         "You may not copy, reproduce, distribute, or exploit any part of our Site or Services without our prior written consent.",
         "Artists retain all copyrights to their artworks but grant Emonique the right to display and market their work."
       ]
     },
-    "section_6": {
-      "heading": "6. Prohibited Activities",
-      "content": "We reserve the right to suspend or terminate accounts that violate these rules. You agree not to:",
-      "items": [
+    {
+      "heading": "Prohibited Activities",
+      "paragraph": "You agree not to:",
+      "list": [
         "Use our Site for any fraudulent, unlawful, or harmful purpose.",
         "Interfere with or disrupt the functionality of our Services.",
         "Post false, misleading, or infringing content.",
         "Attempt to gain unauthorized access to our Site, servers, or data."
+      ],
+      "note": "We reserve the right to suspend or terminate accounts that violate these rules."
+    },
+    {
+      "heading": "Disclaimers & Limitation of Liability",
+      "sections": [
+        {
+          "heading": "Disclaimer of Warranties",
+          "list": [
+            "Our Services are provided «as is» and «as available» without any warranties, express or implied.",
+            "We do not guarantee uninterrupted or error-free operation of our Site.",
+            "We do not endorse or guarantee the quality or authenticity of any artwork sold through our platform."
+          ]
+        },
+        {
+          "heading": "Limitation of Liability",
+          "paragraph": "To the maximum extent permitted by law, Emonique shall not be liable for:",
+          "list": [
+            "Indirect, incidental, or consequential damages.",
+            "Loss of data, revenue, or business opportunities.",
+            "Any issues arising from transactions between buyers and artists."
+          ],
+          "note": "In no event shall our total liability exceed the amount paid for the disputed transaction."
+        }
       ]
     },
-    "section_7": {
-      "heading": "7. Disclaimers & Limitation of Liability",
-      "sub_section_1": {
-        "heading": "7.1. Disclaimer of Warranties",
-        "items": [
-          "Our Services are provided «as is» and «as available» without any warranties, express or implied.",
-          "We do not guarantee uninterrupted or error-free operation of our Site.",
-          "We do not endorse or guarantee the quality or authenticity of any artwork sold through our platform."
-        ]
-      },
-      "sub_section_2": {
-        "heading": "7.2. Limitation of Liability",
-        "content": "In no event shall our total liability exceed the amount paid for the disputed transaction. To the maximum extent permitted by law, Emonique shall not be liable for:",
-        "items": [
-          "Indirect, incidental, or consequential damages.",
-          "Loss of data, revenue, or business opportunities.",
-          "Any issues arising from transactions between buyers and artists."
-        ]
-      }
-    },
-    "section_8": {
-      "heading": "8. Indemnification",
-      "content": "You agree to indemnify and hold harmless Emonique, its officers, directors, employees, and affiliates from any claims, damages, liabilities, or expenses arising from:",
-      "items": [
+    {
+      "heading": "Indemnification",
+      "paragraph": "You agree to indemnify and hold harmless Emonique, its officers, directors, employees, and affiliates from any claims, damages, liabilities, or expenses arising from:",
+      "list": [
         "Your use of our Site and Services.",
         "Your violation of these Terms.",
         "Any disputes between buyers and artists."
       ]
     },
-    "section_9": {
-      "heading": "9. Privacy Policy",
-      "content": "Our Privacy Policy governs how we collect, use, and protect your personal information. By using our Services, you acknowledge and agree to our data practices."
+    {
+      "heading": "Privacy Policy",
+      "paragraph": "Our Privacy Policy governs how we collect, use, and protect your personal information. By using our Services, you acknowledge and agree to our data practices."
     },
-    "section_10": {
-      "heading": "10. Dispute Resolution & Governing Law",
-      "sub_section_1": {
-        "heading": "10.1. Governing Law",
-        "content": "These Terms shall be governed by and construed in accordance with the laws of [Insert Jurisdiction, e.g., South Korea, UK, or the US], without regard to its conflict of laws principles."
-      },
-      "sub_section_2": {
-        "heading": "10.2. Dispute Resolution",
-        "items": [
-          "For EU/UK Users: Disputes may be resolved through the Online Dispute Resolution (ODR) Platform.",
-          "For US & International Users: Disputes shall be resolved through binding arbitration in [Insert Jurisdiction].",
-          "Exceptions: Either party may seek relief in a small claims court or for injunctive relief related to intellectual property."
-        ]
-      }
+    {
+      "heading": "Dispute Resolution & Governing Law",
+      "sections": [
+        {
+          "heading": "Governing Law",
+          "paragraph": "These Terms shall be governed by and construed in accordance with the laws of South Korea, without regard to its conflict of laws principles. This does not affect mandatory consumer protections applicable in your country of residence"
+        },
+        {
+          "heading": "Dispute Resolution",
+          "list": [
+            "For EU/UK Users: Disputes may be resolved through the Online Dispute Resolution (ODR) Platform.",
+            "For International Users: Disputes shall be resolved by binding arbitration in Seoul, South Korea, under the Korean Commercial Arbitration Board (KCAB) rules.",
+            "Exceptions: Either party may seek relief in a small claims court or for injunctive relief related to intellectual property."
+          ]
+        }
+      ]
     },
-    "section_11": {
-      "heading": "11. Termination",
-      "content": "Termination may be immediate and without prior notice. We reserve the right to suspend or terminate your access to our Services if you:",
-      "items": [
+    {
+      "heading": "Termination",
+      "paragraph": "We reserve the right to suspend or terminate your access to our Services if you:",
+      "list": [
         "Violate these Terms.",
         "Engage in fraudulent or illegal activity.",
         "Cause harm to our platform or users."
-      ]
+      ],
+      "note": "Termination may be immediate and without prior notice."
     },
-    "section_12": {
-      "heading": "12. Changes to These Terms",
-      "content": "We may update these Terms periodically. The most recent version will be posted on our Site, and continued use of our Services constitutes acceptance of the updated Terms."
+    {
+      "heading": "Changes to These Terms",
+      "paragraph": "We may update these Terms periodically. The most recent version will be posted on our Site, and continued use of our Services constitutes acceptance of the updated Terms."
     },
-    "section_13": {
-      "heading": "13. Contact Us",
-      "content": "If you have any questions about these Terms, please contact us at:",
-      "items": ["Email: contact@emonique.com"]
+    {
+      "heading": "Force Majeure",
+      "paragraph": "Emonique shall not be liable for any failure or delay in performance due to causes beyond its reasonable control, including but not limited to acts of God, war, terrorism, labor strikes, pandemics, government restricdtions, natural disasters, or Internet outages. Obligations shall resume as soon as reasonably practicable."
+    },
+    {
+      "heading": "Contact Us",
+      "paragraph": "If you have any questions about these Terms, please contact us at:",
+      "list": ["Email: contact@emonique.com"]
     }
-  },
+  ],
   "privacy_policy": [
     {
       "paragraph": [
@@ -446,7 +487,7 @@
     {
       "heading": "Contact Us",
       "paragraph": "If you have questions about this Privacy Policy, contact us at:",
-      "list": ["Email: privacy@emonique.com"]
+      "list": ["Email: contact@emonique.com"]
     }
   ]
 }

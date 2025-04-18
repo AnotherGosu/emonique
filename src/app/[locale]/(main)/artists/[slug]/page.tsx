@@ -12,22 +12,23 @@ import { getDictionary } from "@/utils/i18";
 
 import { ArtworkGridFallback } from "@/components/ArtworkGrid";
 import { ContactForm } from "@/components/ContactForm";
-import { HeroSection } from "@/components/HeroSection";
 import { Heading, Paragraph, RichText, Section } from "@/components/Typography";
 
 import { Artist } from "./_components/Artist";
 import { Artworks } from "./_components/Artworks";
 
-export async function generateStaticParams() {
-  const { artists } = await getArtistSlugs();
+export const revalidate = 0;
 
-  return artists.map(({ slug }) => ({ slug }));
+export async function generateStaticParams() {
+  const slugs = await getArtistSlugs();
+
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { locale, slug } = await props.params;
 
-  const { artist } = await getArtist({ slug, locale });
+  const artist = await getArtist({ slug, locale });
 
   if (!artist) notFound();
 
@@ -47,53 +48,49 @@ export default async function Page(props: PageProps) {
 
   const dict = await getDictionary(locale);
 
-  const { artist } = await getArtist({ slug, locale });
+  const artist = await getArtist({ slug, locale });
 
   if (!artist) notFound();
 
   return (
     <>
-      <HeroSection heading={dict["headings"]["artist"]} />
+      <Artist
+        name={artist.name}
+        quote={artist.quote}
+        highlights={artist.highlights}
+        photo={artist.photo}
+        dict={dict}
+      />
 
-      <div className="flex flex-col gap-20 py-20">
-        <Artist
-          name={artist.name}
-          quote={artist.quote}
-          highlights={artist.highlights}
-          photo={artist.photo}
+      <Section>
+        <Heading className="mb-6">{dict["headings"]["about_artist"]}</Heading>
+
+        <RichText raw={artist.biography.raw} />
+      </Section>
+
+      <Section className={cn("grid gap-x-20 gap-y-8", "md:grid-cols-2")}>
+        <div>
+          <Heading className="mb-6">{dict["headings"]["inquire"]}</Heading>
+
+          <Paragraph>{dict["contact"]["artist"]}</Paragraph>
+        </div>
+
+        <ContactForm
           dict={dict}
+          context={{ artistSlug: artist.slug }}
         />
+      </Section>
 
-        <Section>
-          <Heading className="mb-6">{dict["headings"]["about_artist"]}</Heading>
+      <Section>
+        <Heading className="mb-6">{dict["headings"]["artworks"]}</Heading>
 
-          <RichText raw={artist.biography.raw} />
-        </Section>
-
-        <Section className={cn("grid gap-x-20 gap-y-8", "md:grid-cols-2")}>
-          <div>
-            <Heading className="mb-6">{dict["headings"]["inquire"]}</Heading>
-
-            <Paragraph>{dict["contact"]["artist"]}</Paragraph>
-          </div>
-
-          <ContactForm
-            dict={dict}
-            context={{ artistSlug: artist.slug }}
+        <Suspense fallback={<ArtworkGridFallback />}>
+          <Artworks
+            locale={locale}
+            slug={artist.slug}
           />
-        </Section>
-
-        <Section>
-          <Heading className="mb-6">{dict["headings"]["artworks"]}</Heading>
-
-          <Suspense fallback={<ArtworkGridFallback />}>
-            <Artworks
-              locale={locale}
-              slug={artist.slug}
-            />
-          </Suspense>
-        </Section>
-      </div>
+        </Suspense>
+      </Section>
     </>
   );
 }

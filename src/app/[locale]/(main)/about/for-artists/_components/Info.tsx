@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import { PropsWithDict } from "@/types/common";
 
+import { IMAGE_PLACEHOLDER } from "@/constants/common";
+
 import banner from "@/images/about-us.png";
 
 import { cn } from "@/utils/cn";
@@ -23,6 +25,9 @@ export const Info = ({ dict }: PropsWithDict) => {
           src={banner}
           alt=""
           width={350}
+          height={465}
+          placeholder={IMAGE_PLACEHOLDER}
+          priority
           className="rounded-xs"
         />
       </div>

@@ -5,8 +5,16 @@ import { Locale } from "@/types/common";
 
 import { fetcher } from "@/utils/fetcher";
 
-export const getArtwork = (variables: { slug: string; locale: Locale }) => {
-  return fetcher<{ artwork: Artwork | null }>(query, variables);
+export const getArtwork = async (variables: {
+  slug: string;
+  locale: Locale;
+}) => {
+  const { artwork } = await fetcher<{ artwork: Artwork | null }>(
+    query,
+    variables,
+  );
+
+  return artwork;
 };
 
 const query = gql`
