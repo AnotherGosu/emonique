@@ -248,7 +248,7 @@
         {
           "heading": "Shipping & Delivery",
           "list": [
-            "We facilitate shipping through third-party logistics providers (e.g., DHL, FedEx).",
+            "We facilitate shipping through third-party logistics providers.",
             "Buyers are responsible for any customs duties or import taxes.",
             "Emonique is not liable for delays caused by shipping carriers or customs authorities."
           ]
@@ -337,13 +337,12 @@
     },
     {
       "heading": "Termination",
-      "paragraph": "We reserve the right to suspend or terminate your access to our Services if you:",
+      "paragraph": "We reserve the right to immediately suspend or terminate your access to our Services without prior notice if you: ",
       "list": [
         "Violate these Terms.",
         "Engage in fraudulent or illegal activity.",
         "Cause harm to our platform or users."
-      ],
-      "note": "Termination may be immediate and without prior notice."
+      ]
     },
     {
       "heading": "Changes to These Terms",
@@ -478,11 +477,11 @@
     },
     {
       "heading": "Children’s Privacy",
-      "paragraph": "Our services are not intended for children under 16. For California residents, our services are not intended for children under 13. We do not knowingly collect data from minors. If you believe a child has provided us with personal information, contact us at privacy@emonique.com for deletion."
+      "paragraph": "Our services are not intended for children under 16. For California residents, our services are not intended for children under 13. We do not knowingly collect data from minors."
     },
     {
       "heading": "Changes to this Privacy Policy",
-      "paragraph": "We may update this Privacy Policy periodically. The latest version will always be posted on our Site with the “Last Updated” date. If we make significant changes, we will notify users via email or a prominent website notice."
+      "paragraph": "We may update this Privacy Policy periodically. The latest version will always be posted on our Site with the «Last Updated» date. If we make significant changes, we will notify users via email or a prominent website notice."
     },
     {
       "heading": "Contact Us",

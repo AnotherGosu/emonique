@@ -12,7 +12,12 @@ import { Heading, Paragraph, Section } from "@/components/Typography";
 
 export const Info = ({ dict }: PropsWithDict) => {
   return (
-    <Section className={cn("flex flex-col gap-x-20 gap-y-6", "lg:flex-row")}>
+    <Section
+      className={cn(
+        "grid grid-cols-1 gap-x-20 gap-y-6",
+        "lg:grid-cols-[1fr_max-content]",
+      )}
+    >
       <div>
         <Heading className="mb-6">{dict["headings"]["art_agency"]}</Heading>
 
@@ -27,9 +32,9 @@ export const Info = ({ dict }: PropsWithDict) => {
         src={banner}
         alt=""
         width={350}
-        height={465}
-        placeholder={IMAGE_PLACEHOLDER}
+        height={450}
         priority
+        placeholder={IMAGE_PLACEHOLDER}
         className="rounded-xs"
       />
     </Section>

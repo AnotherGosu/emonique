@@ -29,8 +29,8 @@ export const ROUTES: Array<{
   { key: "about_us", path: /^about$/ },
   { key: "for_collectors", path: /^about\/for-collectors$/ },
   { key: "for_artists", path: /^about\/for-artists$/ },
-  { key: "privacy_policy", path: /^privacy-policy$/ },
-  { key: "terms_of_service", path: /^terms-of-service$/ },
+  { key: "privacy_policy", path: /^about\/privacy-policy$/ },
+  { key: "terms_of_service", path: /^about\/terms-of-service$/ },
 ];
 
 export const CONTACTS = {

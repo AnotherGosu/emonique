@@ -18,16 +18,21 @@ export const Info = ({ dict }: PropsWithDict) => {
         {dict["about"]["for_collectors"]["info"]}
       </Paragraph>
 
-      <div className={cn("flex flex-col gap-x-20 gap-y-6", "lg:flex-row")}>
+      <div
+        className={cn(
+          "grid grid-cols-1 gap-x-20 gap-y-6",
+          "lg:grid-cols-[1fr_max-content]",
+        )}
+      >
         <ArticleList items={dict["about"]["for_collectors"]["list"]} />
 
         <Image
           src={banner}
           alt=""
           width={350}
-          height={465}
-          placeholder={IMAGE_PLACEHOLDER}
+          height={450}
           priority
+          placeholder={IMAGE_PLACEHOLDER}
           className="rounded-xs"
         />
       </div>
