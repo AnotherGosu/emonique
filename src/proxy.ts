@@ -4,7 +4,7 @@ import { LOCALES } from "@/constants/common";
 
 import { getLocale } from "@/utils/i18";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const pathnameHasLocale = LOCALES.some(

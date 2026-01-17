@@ -35,7 +35,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { locale } = await props.params;
 
-  const dict = await getDictionary(locale);
+  const dict = await getDictionary(locale as Locale);
 
   return {
     title: { default: "Emonique", template: "%s • Emonique" },
@@ -58,7 +58,7 @@ export async function generateMetadata(
 }
 
 interface RootLayoutProps extends React.PropsWithChildren {
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }
 
 export default async function RootLayout({
@@ -67,7 +67,7 @@ export default async function RootLayout({
 }: RootLayoutProps) {
   const { locale } = await params;
 
-  const dict = await getDictionary(locale);
+  const dict = await getDictionary(locale as Locale);
 
   return (
     <html lang={locale}>

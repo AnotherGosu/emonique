@@ -7,13 +7,13 @@ import { PageHeading } from "@/components/PageHeading";
 import { Section } from "@/components/Typography";
 
 interface LayoutProps extends React.PropsWithChildren {
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }
 
 export default async function Layout(props: LayoutProps) {
   const { locale } = await props.params;
 
-  const dict = await getDictionary(locale);
+  const dict = await getDictionary(locale as Locale);
 
   return (
     <>
